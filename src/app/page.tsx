@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center w-full min-h-screen">
-      <Button>Hello world!</Button>
+    <div className="flex flex-col bg-slate-50 w-full min-h-screen">
+      <Header />
     </div>
   )
 }
