@@ -4,7 +4,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 
 export function Header() {
   return (
-    <header className="flex w-full items-center border-b">
+    <header className="flex w-full items-center border-b fixed z-10">
       <div className="flex w-[1120px] justify-between mx-auto py-5">
         <h1 className="font-semibold text-xl">ecthon<span className="text-purple-600">.</span></h1>
 
