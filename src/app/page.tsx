@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col bg-slate-50 w-auto h-auto">
       <Header />
       <Heading />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   )
 }
