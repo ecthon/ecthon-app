@@ -6,7 +6,7 @@ export function Heading () {
 
   return (
     <main className="flex flex-col h-screen max-sm:h-auto bg-[url('../../public/bg-blur.svg')] bg-cover bg-center bg-no-repeat">
-      <div className="flex flex-col items-center mt-40 max-sm:mt-32 h-auto max-w-[1120px] max-sm:w-full mx-auto">
+      <div className="flex flex-col items-center mt-40 max-sm:mt-32 h-auto max-w-[1216px] max-sm:w-full mx-auto">
         <span className="flex items-center gap-1 text-base max-sm:text-xs mb-10 max-sm:mb-5 text-zinc-800 bg-white/25 border border-white px-4 py-1 rounded-full">
           <LightningBoltIcon className="max-sm:w-3 max-sm:h-3" />
           Olá, me chamo Ecthon!
