@@ -18,12 +18,12 @@ export function Projects() {
             <Image src='https://github.com/ecthon.png' width={400} height={400} alt="" />
           </CardContent>
           <CardFooter className="flex justify-between">
-              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm">Detalhes</a>
+              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
             <div className="flex gap-1">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
                       <GlobeIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -35,7 +35,7 @@ export function Projects() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
                       <GitHubLogoIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -57,14 +57,33 @@ export function Projects() {
             <Image src='https://github.com/ecthon.png' width={400} height={400} alt="" />
           </CardContent>
           <CardFooter className="flex justify-between">
-              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm">Detalhes</a>
+              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
             <div className="flex gap-1">
-              <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
-                <GlobeIcon width={20} height={20}/>
-              </a>
-              <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
-                <GitHubLogoIcon width={20} height={20}/>
-              </a>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
+                      <GlobeIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver online
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
+                      <GitHubLogoIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Visite o repositório
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              
             </div>
           </CardFooter>
         </Card>
@@ -77,17 +96,37 @@ export function Projects() {
             <Image src='https://github.com/ecthon.png' width={400} height={400} alt="" />
           </CardContent>
           <CardFooter className="flex justify-between">
-              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm">Detalhes</a>
+              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
             <div className="flex gap-1">
-              <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
-                <GlobeIcon width={20} height={20}/>
-              </a>
-              <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer">
-                <GitHubLogoIcon width={20} height={20}/>
-              </a>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
+                      <GlobeIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver online
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
+                      <GitHubLogoIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Visite o repositório
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              
             </div>
           </CardFooter>
         </Card>
+        
       </div>
     </div>
   )
