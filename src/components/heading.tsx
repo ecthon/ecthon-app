@@ -1,6 +1,6 @@
 import { Send } from "lucide-react";
 import { Button } from "./ui/button";
-import { LightningBoltIcon } from "@radix-ui/react-icons";
+import { LightningBoltIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 
 export function Heading () {
 
