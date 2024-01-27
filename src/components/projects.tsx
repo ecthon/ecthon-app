@@ -18,7 +18,7 @@ export function Projects() {
             <Image src='https://github.com/ecthon.png' width={400} height={400} alt="" />
           </CardContent>
           <CardFooter className="flex justify-between">
-              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
+              <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border text-blue-500">Detalhes</a>
             <div className="flex gap-1">
               <TooltipProvider>
                 <Tooltip>
