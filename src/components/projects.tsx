@@ -6,7 +6,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/t
 
 export function Projects() {
   return (
-    <div className="flex flex-col w-[1216px] max-sm:w-full h-[800px] mx-auto mt-[-150px] max-sm:mt-0 max-sm:px-5">
+    <div className="flex flex-col w-[1216px] max-sm:w-full h-[800px] max-sm:h-auto mx-auto mt-[-150px] max-sm:mt-0 max-sm:px-5">
       <h2 className="text-5xl max-sm:text-2xl font-thin mb-12 max-sm:mb-6 text-gray-400"><span className="font-normal text-gray-900">Projetos </span>recentes</h2>  
       <div className="flex max-sm:flex-col flex-wrap gap-8 max-sm:gap-4">
         <Card className="flex flex-col flex-1 w-full">
