@@ -16,7 +16,7 @@ export function MobileMenu(props: any) {
           className="flex w-8 h-8 items-center justify-center p-0 bg-black/5"
           onClick={handleClick}
         >
-          <X className="w-4 h-4 text-yellow-50"/>
+          <X className="w-4 h-4 text-gray-500"/>
         </Button>
       </header>
       <div className="flex flex-col">

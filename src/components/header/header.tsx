@@ -4,6 +4,8 @@ import { Menu } from "./menu";
 import { MobileMenu } from "./mobile-menu";
 import { Button } from "../ui/button";
 import { useState } from "react";
+import { ModeToggle } from "../theme/theme-toggle";
+
 
 export function Header() {
   const [isActive, setIsActive] = useState(false)
@@ -16,8 +18,9 @@ export function Header() {
         <div className="flex w-[1216px] justify-between items-center mx-auto py-5 max-sm:py-2 max-sm:px-5">
           <h1 className="font-semibold text-xl max-sm:text-sm">ecthon<span className="text-blue-600">.</span></h1>
           <Menu />
+          <ModeToggle />
           <Button 
-            className="flex w-8 h-8 items-center justify-center p-0 bg-black/5"
+            className="hidden max-sm:flex w-8 h-8 items-center justify-center p-0 bg-black/5"
             onClick={handleActive}
           >
             <HamburgerMenuIcon className="w-4 h-4 text-yellow-50"/>
