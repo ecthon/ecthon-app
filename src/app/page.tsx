@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header/header";
 import { Heading } from "@/components/heading";
 import { Portfolio } from "@/components/portfolio";
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Heading />
       <Portfolio />
+      <Footer />
     </>
   )
 }
