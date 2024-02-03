@@ -11,124 +11,87 @@ export function Portfolio() {
       <div className="flex items-center">
         <p className="text-5xl max-sm:text-2xl">Projetos <span className="text-zinc-500 font-extralight">recentes</span></p>
       </div>
+      
       <div className="flex max-sm:flex-col gap-8 mt-10 max-sm:mt-8">
-      <Card className="flex flex-col flex-1 w-full dark:bg-bg-gray-950">
-        <CardHeader>
-          <CardTitle>Pizza.shop API</CardTitle>
-          <CardDescription>Aplicação para controle financeiro</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image src='https://github.com/ecthon.png' width={400} height={400} className="rounded-lg" alt="" />
-        </CardContent>
-        <CardFooter className="flex justify-between">
-            <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
-          <div className="flex gap-1">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GlobeIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Ver online
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GitHubLogoIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Visite o repositório
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            
-          </div>
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer hover:bg-zinc-900/50">
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis! Cum consequuntur cupiditate delectus, rerum, ad exercitationem asperiores laboriosam incidunt error eveniet dolorum doloremque nemo. Odit ipsam vel iste autem.</p>
+          </CardContent>
+          <CardFooter className="flex gap-2 justify-end">
+            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
+            <div className="flex gap-1">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                      <GlobeIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver online
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                      <GitHubLogoIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver repositório
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              
+            </div>
         </CardFooter>
-      </Card>
-      <Card className="flex flex-col flex-1 w-full dark:bg-bg-gray-950">
-        <CardHeader>
-          <CardTitle>Pizza.shop API</CardTitle>
-          <CardDescription>Aplicação para controle financeiro</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image src='https://github.com/ecthon.png' width={400} height={400} className="rounded-lg" alt="" />
-        </CardContent>
-        <CardFooter className="flex justify-between">
-            <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
-          <div className="flex gap-1">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GlobeIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Ver online
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GitHubLogoIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Visite o repositório
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            
-          </div>
+        </Card>
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer hover:bg-zinc-900/50">
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis! Cum consequuntur cupiditate delectus, rerum, ad exercitationem asperiores laboriosam incidunt error eveniet dolorum doloremque nemo. Odit ipsam vel iste autem.</p>
+          </CardContent>
+          <CardFooter className="flex gap-2 justify-end">
+            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
+            <div className="flex gap-1">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                      <GlobeIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver online
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                      <GitHubLogoIcon width={20} height={20}/>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Ver repositório
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              
+            </div>
         </CardFooter>
-      </Card>
-      <Card className="flex flex-col flex-1 w-full dark:bg-bg-gray-950">
-        <CardHeader>
-          <CardTitle>Pizza.shop API</CardTitle>
-          <CardDescription>Aplicação para controle financeiro</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Image src='https://github.com/ecthon.png' width={400} height={400} className="rounded-lg" alt="" />
-        </CardContent>
-        <CardFooter className="flex justify-between">
-            <a href="#" className="font-semibold px-4 py-2 hover:bg-black/5 rounded-lg text-sm border">Detalhes</a>
-          <div className="flex gap-1">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GlobeIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Ver online
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-black/5 cursor-pointer border">
-                    <GitHubLogoIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Visite o repositório
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            
-          </div>
-        </CardFooter>
-      </Card>
+        </Card>
+        
       </div>
     </section>
   )
