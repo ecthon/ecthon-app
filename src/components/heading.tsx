@@ -7,7 +7,9 @@ export function Heading() {
   return (
     <section className="mx-auto flex max-w-[1216px] flex-col items-center py-8 max-sm:py-16 md:py-12 md:pb-8 lg:py-40 lg:pb-20 gap-6">
       <div className="inline-flex items-center rounded-lg bg-muted gap-2 px-3 py-1 text-sm font-medium">
-        <LightningBoltIcon className="max-sm:w-3 max-sm:h-3" />
+      <div className="h-2 w-2 rounded-full bg-emerald-500">
+          <div className="z-[11] h-2 w-2 animate-ping rounded-full bg-emerald-500 transition-[4s]" />
+        </div>
         <Separator orientation="vertical" className="h-4 dark:bg-white/10 bg-black/10"/>
         Olá, sou Ecthon Almeida.
       </div>
