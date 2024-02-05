@@ -13,7 +13,7 @@ export function Portfolio() {
       </div>
       
       <div className="flex max-sm:flex-col gap-8 mt-10 max-sm:mt-8">
-        <Card className="flex-1 h-auto rounded-xl cursor-pointer hover:bg-zinc-900/50">
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-transparent">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
@@ -22,7 +22,7 @@ export function Portfolio() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis! Cum consequuntur cupiditate delectus, rerum, ad exercitationem asperiores laboriosam incidunt error eveniet dolorum doloremque nemo. Odit ipsam vel iste autem.</p>
           </CardContent>
           <CardFooter className="flex gap-2 justify-end">
-            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
+            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900 text-white dark:bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
             <div className="flex gap-1">
               <TooltipProvider>
                 <Tooltip>
@@ -52,7 +52,7 @@ export function Portfolio() {
             </div>
         </CardFooter>
         </Card>
-        <Card className="flex-1 h-auto rounded-xl cursor-pointer hover:bg-zinc-900/50">
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-transparent">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
@@ -61,7 +61,7 @@ export function Portfolio() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis! Cum consequuntur cupiditate delectus, rerum, ad exercitationem asperiores laboriosam incidunt error eveniet dolorum doloremque nemo. Odit ipsam vel iste autem.</p>
           </CardContent>
           <CardFooter className="flex gap-2 justify-end">
-            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
+            <a href="#" className="font-semibold px-4 py-2 bg-zinc-900 text-white dark:bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
             <div className="flex gap-1">
               <TooltipProvider>
                 <Tooltip>
