@@ -13,7 +13,7 @@ export function Portfolio() {
       </div>
       
       <div className="flex max-sm:flex-col gap-8 mt-10 max-sm:mt-8">
-        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-transparent">
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-zinc-900/20">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
@@ -27,7 +27,7 @@ export function Portfolio() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
                       <GlobeIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -39,7 +39,7 @@ export function Portfolio() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
                       <GitHubLogoIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -52,7 +52,7 @@ export function Portfolio() {
             </div>
         </CardFooter>
         </Card>
-        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-transparent">
+        <Card className="flex-1 h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-zinc-900/20">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description lorem ipsum dolor react.js, next.js, tailwind css end git.</CardDescription>
@@ -66,7 +66,7 @@ export function Portfolio() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
                       <GlobeIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -78,7 +78,7 @@ export function Portfolio() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/50 cursor-pointer">
+                    <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
                       <GitHubLogoIcon width={20} height={20}/>
                     </a>
                   </TooltipTrigger>
@@ -91,6 +91,7 @@ export function Portfolio() {
             </div>
         </CardFooter>
         </Card>
+
         
       </div>
     </section>
