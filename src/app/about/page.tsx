@@ -4,7 +4,6 @@ import { Header } from "@/components/header/header";
 export default function About() {
   return (
     <section>
-      <Header/>
       <div className="flex flex-col max-w-[500px] mx-auto mt-40 max-sm:mt-14 max-sm:px-7">
         <Avatar>
           <AvatarImage src="https://github.com/ecthon.png" />

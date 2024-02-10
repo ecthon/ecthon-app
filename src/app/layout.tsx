@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme/theme-provider'
+import { Header } from '@/components/header/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,10 @@ export default function RootLayout({
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
+          enableSystem
+          disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
