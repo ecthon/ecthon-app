@@ -4,7 +4,9 @@ import Image from "next/image";
 import { CardProject } from "./card-project";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
-import { GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
+import { ArrowTopLeftIcon, ArrowTopRightIcon, GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { ArrowUpRight } from "lucide-react";
 
 export function Portfolio() {
   return (
@@ -13,8 +15,46 @@ export function Portfolio() {
       <div className="flex items-center">
         <p className="text-5xl max-sm:text-2xl">Projetos <span className="text-zinc-500 font-extralight">recentes</span></p>
       </div>
-      <div className="flex flex-wrap max-sm:flex-col gap-8 mt-10 max-sm:mt-8">
+      <div className="mx-auto w-[1216px] max-sm:w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+          <div className="rounded-lg gap-4 hover:bg-zinc-900/50 max-sm:bg-zinc-900/50 p-4 cursor-pointer">
+            <div className="flex flex-col w-full h-[200xp]">
+              <Avatar className="flex w-full rounded-lg h-[200px]">
+                <AvatarImage src="https://github.com/ecthon.png" />
+              </Avatar>
+            </div>
+            <div className="flex justify-between items-center mt-4">
+              <p className="font-semibold text-xl">DT Money</p>
+              <ArrowUpRight className="w-6 h-6 text-zinc-800"/>
+            </div>
+          </div>
+          <div className="rounded-lg gap-4 hover:bg-zinc-900/50 max-sm:bg-zinc-900/50 p-4 cursor-pointer">
+            <div className="flex flex-col w-full h-[200xp]">
+              <Avatar className="flex w-full rounded-lg h-[200px]">
+                <AvatarImage src="https://github.com/ecthon.png" />
+              </Avatar>
+            </div>
+            <div className="flex justify-between items-center mt-4">
+              <p className="font-semibold text-xl">DT Money</p>
+              <ArrowUpRight className="w-6 h-6 text-zinc-800"/>
+            </div>
+          </div>
+          <div className="rounded-lg gap-4 hover:bg-zinc-900/50 max-sm:bg-zinc-900/50 p-4 cursor-pointer">
+            <div className="flex flex-col w-full h-[200xp]">
+              <Avatar className="flex w-full rounded-lg h-[200px]">
+                <AvatarImage src="https://github.com/ecthon.png" />
+              </Avatar>
+            </div>
+            <div className="flex justify-between items-center mt-4">
+              <p className="font-semibold text-xl">DT Money</p>
+              <ArrowUpRight className="w-6 h-6 text-zinc-800"/>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </section>
   )
 }
