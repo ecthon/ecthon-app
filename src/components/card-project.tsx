@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+import { Avatar, AvatarImage } from "./ui/avatar";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
@@ -10,43 +12,16 @@ interface ICardProps {
 
 export function CardProject({title, subtitle, description }: ICardProps) {
   return (
-    <Card className="max-sm:flex-1 min-w-[592px] h-auto rounded-xl cursor-pointer dark:hover:bg-zinc-900/50 dark:border-zinc-900/20">
-        <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <CardDescription>{subtitle}</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>{description}</p>
-        </CardContent>
-        <CardFooter className="flex gap-2 justify-end">
-          <a href="#" className="font-semibold px-4 py-2 bg-zinc-900 text-white dark:bg-zinc-900/50 rounded-lg text-xs">Detalhes</a>
-          <div className="flex gap-1">
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
-                    <GlobeIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Ver online
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <a href="#" target="_blank" className="p-2 rounded-lg hover:bg-zinc-900/5 cursor-pointer">
-                    <GitHubLogoIcon width={20} height={20}/>
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  Ver repositório
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </div>
-      </CardFooter>
-    </Card>
+    <div className="group rounded-lg gap-4 hover:bg-zinc-900/50 max-sm:bg-zinc-900/50 p-4 cursor-pointer">
+      <div className="flex flex-col w-full h-[200xp]">
+        <Avatar className="flex w-full rounded-lg h-[200px]">
+          <AvatarImage src="https://github.com/ecthon.png" />
+        </Avatar>
+      </div>
+      <div className="group flex justify-between items-center mt-4">
+        <p className="font-semibold text-xl text-zinc-400">DT Money</p>
+        <ArrowUpRight className="group-hover:text-emerald-500 w-6 h-6 text-transparent"/>
+      </div>
+  </div>
   )
 }
