@@ -15,13 +15,16 @@ export function Heading() {
       <span className="text-zinc-900 antialiased">DISPONÍVEL PARA FREELANCE</span>
     </div>
     <h1 className="text-5xl font-semibold mt-8 text-zinc-900 antialiased">Front-end & UI Designer ✨</h1>
+    <p className="max-w-[750px] text-center text-lg text-muted-foreground max-sm:text-base justify-center mt-6 mb-8">
+      Desenvolvendo soluções criativas e inovadoras, sempre com o objetivo de proporcionar a melhor experiência ao usuário.
+    </p>
     <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
-    <Button asChild>
-      <Link href="#">Enviar mensagem</Link>
-    </Button>
-    <Button variant='outline' asChild>
-      <Link href="#" className="flex gap-2"><FaLinkedinIn /></Link>
-    </Button>
+      <Button asChild>
+        <Link href="#">Enviar mensagem</Link>
+      </Button>
+      <Button variant='outline' asChild>
+        <Link href="#" className="flex gap-2"><FaLinkedinIn /></Link>
+      </Button>
     </div>
 
   </div>
