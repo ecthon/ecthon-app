@@ -5,17 +5,17 @@ import { FaLinkedinIn } from "react-icons/fa"
 
 export function Heading() {
   return (
-    <div className="flex flex-col items-center w-[928px] h-screen justify-center mx-auto">
+    <div className="flex flex-col items-center justify-center mx-auto w-[928px] max-sm:w-full h-screen">
       
     <div className="flex items-center rounded-lg bg-emerald-500/5 gap-2 px-3 py-1 text-sm font-medium mx-auto">
       <div className="h-2 w-2 rounded-full bg-emerald-500">
           <div className="z-[11] h-2 w-2 animate-ping rounded-full bg-emerald-500 transition-[4s]" />
       </div>
         <Separator orientation="vertical" className="h-4 dark:bg-white/10 bg-black/10"/>
-      <span className="text-zinc-900 antialiased">DISPONÍVEL PARA FREELANCE</span>
+      <span className="text-zinc-900 antialiased max-sm:text-xs">DISPONÍVEL PARA FREELANCE</span>
     </div>
-    <h1 className="text-5xl font-semibold mt-8 text-zinc-900 antialiased">Front-end & UI Designer ✨</h1>
-    <p className="max-w-[750px] text-center text-lg text-muted-foreground max-sm:text-base justify-center mt-6 mb-8">
+    <h1 className=" flex max-sm:flex-col max-sm:w-full mx-auto text-center text-5xl max-sm:text-4xl font-semibold mt-8 text-zinc-900 antialiased">Front-end<span>& UI Designer ✨.</span></h1>
+    <p className="max-sm:w-full max-w-[750px] text-center text-lg text-muted-foreground max-sm:text-base justify-center mt-6 mb-8">
       Desenvolvendo soluções criativas e inovadoras, sempre com o objetivo de proporcionar a melhor experiência ao usuário.
     </p>
     <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
