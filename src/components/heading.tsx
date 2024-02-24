@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa"
 
 export function Heading() {
   return (
-    <div className="flex flex-col items-center justify-center mx-auto w-[928px] max-sm:w-full h-screen">
+    <div className="flex flex-col items-center justify-center mx-auto w-[928px] max-sm:w-full h-screen max-sm:px-5">
       
     <div className="flex items-center rounded-lg bg-emerald-500/5 gap-2 px-3 py-1 text-sm font-medium mx-auto">
       <div className="h-2 w-2 rounded-full bg-emerald-500">
@@ -18,7 +18,7 @@ export function Heading() {
     <p className="max-sm:w-full max-w-[750px] text-center text-lg text-muted-foreground max-sm:text-base justify-center mt-6 mb-8">
       Desenvolvendo soluções criativas e inovadoras, sempre com o objetivo de proporcionar a melhor experiência ao usuário.
     </p>
-    <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
+    <div className="flex w-full items-center justify-center space-x-4 max-sm:space-x-2 py-4 md:pb-10">
       <Button asChild>
         <Link href="#">Enviar mensagem</Link>
       </Button>
