@@ -3,7 +3,7 @@ import { Card } from "./ui/card";
 
 export function Portfolio() {
   return (
-    <div className="flex flex-col w-[1216px] max-sm:w-full mx-auto gap-8 -mt-40 max-sm:-mt-10 max-sm:px-5">
+    <div className="flex flex-col w-[1216px] max-sm:w-full mx-auto gap-8 -mt-40 max-sm:-mt-12 max-sm:px-5">
       <div className="flex gap-1 items-center">
         <h1 className="font-extralight text-3xl">Portfolio</h1>
         <span><HiMiniArrowDownRight size={24}/></span>
