@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa"
 
 export function Heading() {
   return (
-    <div className="flex flex-col items-center justify-center mx-auto w-[928px] max-sm:w-full h-screen max-sm:-mt-10 max-sm:px-5">
+    <div className="flex flex-col items-center justify-center mx-auto w-[928px] max-sm:w-full h-screen max-sm:-mt-12 max-sm:px-5">
       
     <div className="flex items-center rounded-lg bg-emerald-500/5 gap-2 px-3 py-1 text-sm font-medium mx-auto">
       <div className="h-2 w-2 rounded-full bg-emerald-500">
