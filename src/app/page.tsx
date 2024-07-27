@@ -1,5 +1,7 @@
+import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -26,7 +28,16 @@ export default function Home() {
         <Link href="#" className="flex gap-2"><FaLinkedinIn /></Link>
       </Button>
     </div>
-
+    <AnimatedGridPattern
+      numSquares={30}
+      maxOpacity={0.1}
+      duration={3}
+      repeatDelay={1}
+      className={cn(
+        "[mask-image:radial-gradient(500px_circle_at_center,green,transparent)]",
+        "inset-x-0 inset-y-[-30%] h-[200%]",
+      )}
+    />
   </div>
   );
 }
