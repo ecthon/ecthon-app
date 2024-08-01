@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Projects } from "@/components/projects";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -29,6 +30,7 @@ export default function Home() {
         </div>
       </div>
       <Projects />
+      <Footer />
     </>
   );
 }
