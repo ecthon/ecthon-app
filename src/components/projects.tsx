@@ -5,7 +5,7 @@ import { IoLogoVercel } from "react-icons/io5";
 
 export function Projects() {
   return (
-    <div className="flex max-sm:flex-col max-sm:h-auto max-sm:w-full max-sm:px-5 w-[928px] h-[500px] gap-2 mx-auto mb-[200px]">
+    <div className="flex max-sm:flex-col max-sm:h-auto max-sm:w-full max-sm:px-5 w-[1216px] h-[500px] gap-2 mx-auto mb-[200px]">
       <Card className="group flex max-sm:h-full w-full h-full flex-col bg-transparent p-1 gap-1 border-zinc-900 overflow-hidden">
         <CardContent className="flex-1 w-full p-0 rounded-lg overflow-hidden relative">
           <img src="https://www.github.com/ecthon.png" alt="" className="hover:group-hover:scale-105 transition-transform duration-500 object-cover max-sm:w-full max-sm:h-auto w-full h-full" />
