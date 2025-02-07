@@ -1,4 +1,5 @@
 "use client";
+import CardHoverEffectDemo from "@/components/card-hover-effect-demo";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           Sequi excepturi nostrum eveniet quasi debitis. Est temporibus facere
           non a neque!
         </p>
+        <CardHoverEffectDemo />
       </div>
     </div>
   );
