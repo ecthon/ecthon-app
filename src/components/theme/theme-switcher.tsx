@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -22,16 +22,18 @@ export function ThemeSwitcher() {
   };
 
   return (
-    <Button
-      variant="outline"
-      size="icon"
-      onClick={toggleTheme}
-      title={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
-      className="size-8 shadow-none border-none"
+    <Switch
+      checked={theme === "dark"}
+      onCheckedChange={toggleTheme}
+      className="flex items-center w-[40px] h-[18px] data-[state=checked]:bg-zinc-800 data-[state=unchecked]:bg-zinc-100"
     >
-      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Alternar tema</span>
-    </Button>
+      <div className="flex  items-center justify-center w-[1rem] h-[1rem] rounded-full">
+        {theme === "light" ? (
+          <Sun className="size-3 w-[0.9rem] text-zinc-950" />
+        ) : (
+          <Moon className="zize-3 text-white" />
+        )}
+      </div>
+    </Switch>
   );
 }
