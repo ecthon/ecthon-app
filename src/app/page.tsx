@@ -1,5 +1,6 @@
 "use client";
 import CardHoverEffectDemo from "@/components/card-hover-effect-demo";
+import { Footer } from "@/components/footer";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 
 export default function Home() {
@@ -19,8 +20,15 @@ export default function Home() {
           Sequi excepturi nostrum eveniet quasi debitis. Est temporibus facere
           non a neque!
         </p>
+      </div>
+      <div className="flex flex-col">
+        <div className="flex w-full justify-between">
+          <h2 className="font-semibold">Projetos</h2>
+          <button className="text-zinc-400">Ver todos</button>
+        </div>
         <CardHoverEffectDemo />
       </div>
+      <Footer />
     </div>
   );
 }
