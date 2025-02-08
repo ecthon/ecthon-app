@@ -2,6 +2,7 @@
 import CardHoverEffectDemo from "@/components/card-hover-effect-demo";
 import { Footer } from "@/components/footer";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
+import { ArrowRight02Icon } from "hugeicons-react";
 
 export default function Home() {
   return (
@@ -11,10 +12,10 @@ export default function Home() {
       </div>
       <header className="flex flex-col w-full">
         <h1 className="font-semibold">Ecthon Almeida</h1>
-        <p className="text-zinc-300">Design Engineer</p>
+        <p className="text-zinc-400">Design Engineer</p>
       </header>
       <div>
-        <p className="text-zinc-300">
+        <p className="text-zinc-400">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
           consequatur reiciendis enim fugiat nobis velit ut, amet expedita?
           Sequi excepturi nostrum eveniet quasi debitis. Est temporibus facere
@@ -24,7 +25,10 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="flex w-full justify-between">
           <h2 className="font-semibold">Projetos</h2>
-          <button className="text-zinc-400">Ver todos</button>
+          <div className="group flex items-center gap-2">
+            <button className="text-zinc-400">ver todos</button>
+            <ArrowRight02Icon className="size-0 group-hover:size-6 transition-all duration-300" />
+          </div>
         </div>
         <CardHoverEffectDemo />
       </div>
