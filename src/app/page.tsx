@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-[600px] mx-auto text-sm py-10 space-y-4">
+    <div className="flex flex-col w-[600px] mx-auto text-base py-10 space-y-4">
       <div className="flex w-full justify-end">
         <ThemeSwitcher />
       </div>
