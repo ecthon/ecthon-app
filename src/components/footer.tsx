@@ -35,7 +35,7 @@ function Clock() {
 
 export function Footer() {
   return (
-    <footer className="flex items-center justify-between text-zinc-500">
+    <footer className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0 sm:justify-between text-zinc-500 p-4">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
