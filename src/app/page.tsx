@@ -16,7 +16,7 @@ export default function Home() {
         </Link>
         <ThemeSwitcher />
       </header>
-      <div className="flex flex-col w-full space-y-4">
+      <div className="flex flex-col w-full space-y-4 bg-zinc-900 p-4 rounded-xl">
         <div className="flex flex-col">
           <h1 className="font-bold text-xl md:text-2xl">Ecthon Almeida</h1>
           <p className="text-zinc-500">Design Engineer</p>

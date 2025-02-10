@@ -6,10 +6,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import {
+  DigitalClockIcon,
   Github01Icon,
   Linkedin02Icon,
   Location03Icon,
-  Time03Icon,
 } from "hugeicons-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -26,8 +26,8 @@ function Clock() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 p-1 rounded-lg hover:bg-zinc-900">
-      <Time03Icon size={16} />
+    <div className="flex items-center gap-2 p-1 rounded-lg">
+      <DigitalClockIcon size={16} />
       <p className="font-bold">{time.toLocaleTimeString()}</p>
     </div>
   );
