@@ -1,6 +1,7 @@
 "use client";
 import CardHoverEffectDemo from "@/components/card-hover-effect-demo";
 import { Footer } from "@/components/footer";
+import MarqueeDemo from "@/components/marquee-demo";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import { ArrowRight02Icon } from "hugeicons-react";
 import Link from "next/link";
@@ -40,6 +41,7 @@ export default function Home() {
         </div>
         <CardHoverEffectDemo />
       </div>
+      <MarqueeDemo />
       <Footer />
     </div>
   );
