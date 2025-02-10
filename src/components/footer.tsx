@@ -35,7 +35,7 @@ function Clock() {
 
 export function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0 sm:justify-between text-zinc-500 p-4">
+    <footer className="flex items-center gap-4 justify-between text-zinc-500 p-4">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
@@ -50,10 +50,16 @@ export function Footer() {
         </Tooltip>
       </TooltipProvider>
       <div className="flex items-center justify-center gap-2">
-        <Link href={"#"} className="p-2 rounded-lg hover:bg-zinc-900">
+        <Link
+          href={"#"}
+          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
+        >
           <Linkedin02Icon size={20} />
         </Link>
-        <Link href={"#"} className="p-2 rounded-lg hover:bg-zinc-900">
+        <Link
+          href={"#"}
+          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
+        >
           <Github01Icon size={20} />
         </Link>
       </div>
