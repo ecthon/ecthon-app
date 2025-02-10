@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
-const spaceMono = Space_Mono({
+const redHatDisplay = Red_Hat_Display({
   weight: ["400", "700"],
   variable: "--font-space-mono",
   subsets: ["latin"],
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceMono.variable} antialiased`}>
+      <body className={`${redHatDisplay.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
