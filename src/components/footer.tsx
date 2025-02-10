@@ -39,9 +39,9 @@ export function Footer() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
-            <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-zinc-900">
+            <div className="flex max-sm:text-xs items-center gap-2 p-2 rounded-lg hover:bg-zinc-900">
               <Location03Icon size={20} />
-              <p>manaus, am</p>
+              <p>Manaus, AM</p>
             </div>
           </TooltipTrigger>
           <TooltipContent>
@@ -49,18 +49,18 @@ export function Footer() {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 max-sm:gap-1">
         <Link
           href={"#"}
           className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
         >
-          <Linkedin02Icon size={20} />
+          <Linkedin02Icon size={20} className="max-sm:size-4" />
         </Link>
         <Link
           href={"#"}
           className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
         >
-          <Github01Icon size={20} />
+          <Github01Icon size={20} className="max-sm:size-4" />
         </Link>
       </div>
     </footer>
