@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const redHatDisplay = Red_Hat_Display({
   weight: ["400", "700"],
-  variable: "--font-space-mono",
+  variable: "--font-red-hat-display",
   subsets: ["latin"],
 });
 
