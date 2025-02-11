@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Red_Hat_Display } from "next/font/google";
+import { Kumbh_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
-const redHatDisplay = Red_Hat_Display({
+const kumbhSans = Kumbh_Sans({
   weight: ["400", "700"],
-  variable: "--font-red-hat-display",
+  variable: "--font-kumbh-sans",
   subsets: ["latin"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${redHatDisplay.variable} antialiased`}>
+      <body className={`${kumbhSans.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
