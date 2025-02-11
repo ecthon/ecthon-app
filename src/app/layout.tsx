@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Kumbh_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
-const kumbhSans = Kumbh_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "700"],
-  variable: "--font-kumbh-sans",
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${kumbhSans.variable} antialiased`}>
+      <body className={`${plusJakartaSans.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
