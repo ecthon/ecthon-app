@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -27,14 +28,15 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group  block h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-zinc-900/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-zinc-900/[0.8] block  rounded-lg
+                "
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -68,7 +70,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-zinc-950 border border-transparent dark:border-zinc-900 group-hover:border-zinc-900 relative z-20",
+        "rounded-2xl h-full w-full overflow-hidden bg-zinc-950 bg-transparent border-transparent dark:border-zinc-900 group-hover:border-zinc-900 relative z-20",
         className
       )}
     >
@@ -86,9 +88,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
+    <div className="group flex gap-2 items-center">
+      <h4 className={cn("flex text-zinc-100 font-bold text-sm tracking-wide", className)}>
+        {children}
+      </h4>
+      <ArrowUpRightIcon size={12} className="text-zinc-600 group-hover:text-purple-500"/>
+    </div>
   );
 };
 export const CardDescription = ({
@@ -101,7 +106,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
