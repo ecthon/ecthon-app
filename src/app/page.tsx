@@ -1,6 +1,7 @@
 "use client";
 import CardHoverEffectDemo from "@/components/card-hover-effect-demo";
 import { Footer } from "@/components/footer";
+import { Skills } from "@/components/skills";
 import { ThemeSwitcher } from "@/components/theme/theme-switcher";
 import { ArrowRight02Icon } from "hugeicons-react";
 import Link from "next/link";
@@ -27,6 +28,7 @@ export default function Home() {
           design minimalista.
         </p>
       </div>
+      <Skills />
       <div className="flex flex-col">
         <div className="flex w-full justify-between">
           <h2 className="font-semibold text-sm">Projetos</h2>
