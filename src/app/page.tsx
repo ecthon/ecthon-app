@@ -10,8 +10,10 @@ export default function Home() {
         <div className="flex w-full justify-between px-4">
           <h2 className="font-semibold text-sm">Projetos</h2>
           <div className="group flex items-center gap-2">
-            <button className="text-xs text-purple-500">ver todos</button>
-            <ArrowRight02Icon className="text-purple-500 size-0 group-hover:size-4 md:group-hover:size-4 transition-all duration-300" />
+            <button className="group-hover:text-purple-500 text-xs text-zinc-500">
+              ver todos
+            </button>
+            <ArrowRight02Icon className="group-hover:text-purple-500 text-zinc-500 size-0 group-hover:size-4 md:group-hover:size-4 transition-all duration-300" />
           </div>
         </div>
         <CardHoverEffectDemo />

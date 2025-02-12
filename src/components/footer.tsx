@@ -39,9 +39,12 @@ export function Footer() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
-            <div className="flex max-sm:text-xs text-sm items-center gap-2 p-2 rounded-lg hover:bg-zinc-900">
-              <Location03Icon size={18} />
-              <p>Manaus, AM</p>
+            <div className="group flex max-sm:text-xs text-sm items-center gap-2 p-2 rounded-lg hover:bg-zinc-900">
+              <Location03Icon
+                size={18}
+                className="group-hover:text-purple-600"
+              />
+              <p className="group-hover:text-zinc-400">Manaus, AM</p>
             </div>
           </TooltipTrigger>
           <TooltipContent>
@@ -52,13 +55,13 @@ export function Footer() {
       <div className="flex items-center justify-center gap-2 max-sm:gap-1">
         <Link
           href={"#"}
-          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
+          className="p-2 rounded-lg hover:bg-zinc-900 hover:text-zinc-400 max-sm:bg-zinc-900"
         >
           <Linkedin02Icon size={18} className="max-sm:size-4" />
         </Link>
         <Link
           href={"#"}
-          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
+          className="p-2 rounded-lg hover:bg-zinc-900 hover:text-zinc-400 max-sm:bg-zinc-900"
         >
           <Github01Icon size={18} className="max-sm:size-4" />
         </Link>
