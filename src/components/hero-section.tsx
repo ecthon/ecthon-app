@@ -9,11 +9,11 @@ export function HeroSection() {
     <main className="flex flex-col w-full max-sm:h-[400px] h-[500px] space-y-8 justify-center">
       <div className="group cursor-pointer flex items-center justify-center gap-2 border rounded-full px-2 py-0.5 font-semibold bg-zinc-900 w-[fit-content]">
         <p>👋</p>
-        <p className="lg:text-[11px] text-zinc-500 flex items-center gap-2 space-x-1 max-sm:space-x-0 text-xs sm:text-sm md:text-base">
+        <p className="lg:text-[11px] text-zinc-500 flex items-center gap-2 space-x-1 max-sm:space-x-0 text-xs sm:text-[12px] md:text-[12px]">
           Disponível para projetos
         </p>
         <Separator orientation="vertical" />
-        <p className="group-hover:text-zinc-300 text-zinc-400 lg:text-[11px] transition-colors duration-300 ease-in-out">
+        <p className="group-hover:text-zinc-300 text-[12px] text-zinc-400 lg:text-[11px] transition-colors duration-300 ease-in-out">
           Freelancer
         </p>
       </div>
