@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  weight: ["400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });

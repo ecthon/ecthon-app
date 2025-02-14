@@ -3,11 +3,9 @@ import { ThemeSwitcher } from "./theme/theme-switcher";
 
 export function Header() {
   return (
-    <header className="flex w-full justify-between">
-      <Link href={"/"} className="flex items-center gap-1">
-        <p className="font-bold text-sm py-1 px-2 rounded-md bg-zinc-900">
-          ecthonalmeida
-        </p>
+    <header className="flex w-full justify-between items-center py-4">
+      <Link href={"/"} className="font-bold text-sm py-1 px-2 rounded-md">
+        ecthon.<span className="text-zinc-700">almeida</span>
       </Link>
       <ThemeSwitcher />
     </header>
