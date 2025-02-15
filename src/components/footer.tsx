@@ -1,15 +1,6 @@
 "use client";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import {
   DigitalClockIcon,
-  Github01Icon,
-  Linkedin02Icon,
-  Location03Icon,
 } from "hugeicons-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -26,7 +17,7 @@ function Clock() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 p-1 rounded-lg">
+    <div className="flex items-center gap-2 px-2 py-1 rounded-lg border border-zinc-900">
       <DigitalClockIcon size={16} />
       <p className="font-bold">{time.toLocaleTimeString()}</p>
     </div>
@@ -35,36 +26,13 @@ function Clock() {
 
 export function Footer() {
   return (
-    <footer className="flex items-center gap-4 justify-between text-zinc-500 p-4">
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger>
-            <div className="group flex max-sm:text-xs text-sm items-center gap-2 p-2 rounded-lg hover:bg-zinc-900">
-              <Location03Icon
-                size={18}
-                className="group-hover:text-purple-600"
-              />
-              <p className="group-hover:text-zinc-400">Manaus, AM</p>
-            </div>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>{Clock()}</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-      <div className="flex items-center justify-center gap-2 max-sm:gap-1">
-        <Link
-          href={"#"}
-          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
-        >
-          <Linkedin02Icon size={18} className="max-sm:size-4" />
-        </Link>
-        <Link
-          href={"#"}
-          className="p-2 rounded-lg hover:bg-zinc-900 max-sm:bg-zinc-900"
-        >
-          <Github01Icon size={18} className="max-sm:size-4" />
-        </Link>
+    <footer className="flex flex-col md:flex-row items-center gap-4 justify-between py-4">
+      <Link href={"/"} className="font-bold text-sm py-1 px-2 rounded-md">
+      ecthon.<span className="text-zinc-700">almeida</span>
+      </Link>
+
+      <div className="text-zinc-500 text-[11px] w-full md:w-[90px] px-2 flex items-center gap-2 justify-center md:justify-start">
+      <Clock />
       </div>
     </footer>
   );
