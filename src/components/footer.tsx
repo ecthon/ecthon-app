@@ -32,8 +32,8 @@ function Clock() {
 
 export function Footer() {
   return (
-    <footer className="flex w-full md:flex-row items-center justify-between py-4 mt-10">
-      <Link href={"/"} className="font-bold text-sm py-1 px-2 rounded-md">
+    <footer className="flex flex-col-reverse max-sm:gap-2 md:flex-row items-center justify-between py-4 mt-10 w-full">
+      <Link href={"/"} className="font-bold text-sm py-1 px-2 rounded-md mb-2 md:mb-0">
       ecthon.<span className="text-zinc-700">almeida</span>
       </Link>
       <Clock />
