@@ -44,7 +44,7 @@ export default function Home() {
           <div className="group cursor-pointer w-full h-[300px] md:h-[420px] border border-zinc-100 rounded-2xl p-1">
             <div className="flex flex-col justify-end h-full bg-gray-100 rounded-[12px] overflow-hidden">
               {/* Conteúdo do card */}
-              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h2 className="text-md font-semibold text-white">Nome do projeto.</h2>
               </div>
             </div>
@@ -54,14 +54,14 @@ export default function Home() {
         <div id="col-2" className="flex flex-col w-full md:w-[360px] gap-2">
           <div className="group cursor-pointer w-full h-[300px] md:h-[260px] border border-zinc-100 rounded-2xl p-1">
             <div className="flex flex-col justify-end h-full bg-gray-100 rounded-[12px] overflow-hidden">
-              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h2 className="text-md font-semibold text-white">Nome do projeto.</h2>
               </div>
             </div>
           </div>
           <div className="group cursor-pointer w-full h-[300px] md:h-[260px] border border-zinc-100 rounded-2xl p-1">
             <div className="flex flex-col justify-end h-full bg-gray-100 rounded-[12px] overflow-hidden">
-              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h2 className="text-md font-semibold text-white">Nome do projeto.</h2>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
         <div id="col-3" className="flex flex-col w-full md:w-[360px]">
           <div className="group cursor-pointer w-full h-[300px] md:h-[420px] border border-zinc-100 rounded-2xl p-1">
             <div className="flex flex-col justify-end h-full bg-gray-100 rounded-[12px] overflow-hidden">
-              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <div className="flex h-32 w-full items-end p-4 bg-gradient-to-t from-black/10 to-transparent/0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h2 className="text-md font-semibold text-white">Nome do projeto.</h2>
               </div>
             </div>
