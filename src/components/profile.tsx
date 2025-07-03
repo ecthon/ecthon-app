@@ -20,10 +20,10 @@ export function Profile() {
             </div>
 
             <div className="flex items-center space-x-1">
-                <Link href={'#'} className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
                     <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-500" />
                 </Link>
-                <Link href={'#'} className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
                     <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-500" />
                 </Link>
                 <button className="flex py-1.5 px-2 rounded-lg cursor-pointer font-semibold text-zinc-700 bg-zinc-100 text-sm">Send mensagem</button>
