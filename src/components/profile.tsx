@@ -1,4 +1,4 @@
-import { GithubIcon, Linkedin02Icon, Location01Icon } from "@hugeicons/core-free-icons";
+import { GithubIcon, Linkedin02Icon, Location01Icon, TelegramIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +26,10 @@ export function Profile() {
                 <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
                     <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-500" />
                 </Link>
-                <button className="flex py-1.5 px-2 rounded-lg cursor-pointer font-semibold text-zinc-700 bg-zinc-100 text-sm">Send mensagem</button>
+                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-zinc-100 bg-zinc-900 text-xs">
+                    <HugeiconsIcon icon={TelegramIcon} size={18} strokeWidth={2} className="text-zinc-500 group-hover:text-orange-500 transition-colors duration-300" />
+                    Send message
+                </button>
             </div>
         </div>
     )
