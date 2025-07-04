@@ -1,7 +1,10 @@
-import { GithubIcon, Linkedin02Icon, Location01Icon, TelegramIcon } from "@hugeicons/core-free-icons";
+'use client';
+
+import { Clock01Icon, GithubIcon, Linkedin02Icon, Location01Icon, TelegramIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Clock } from "@/components/clock";
 
 export function Profile() {
     return (
@@ -10,10 +13,14 @@ export function Profile() {
                 <Image src={'https://github.com/ecthon.png'} alt="Avatar" width={64} height={64} className="rounded-full" />
                 <div className="flex flex-col">
                     <p className="font-semibold text-zinc-900">Ecthon Almeida</p>
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-4">
                         <div className="group flex items-center space-x-1">
                             <HugeiconsIcon icon={Location01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-orange-500" />
-                            <p className="text-sm text-zinc-500">Manaus</p>
+                            <p className="text-sm text-zinc-500">Manaus/AM</p>
+                        </div>
+                        <div className="group flex items-center space-x-1">
+                            <HugeiconsIcon icon={Clock01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-orange-500" />
+                            <Clock />
                         </div>
                     </div>
                 </div>
