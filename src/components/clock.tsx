@@ -1,31 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-export function Clock() {
-  const [time, setTime] = useState(new Date());
+export default function Clock() {
+  const [time, setTime] = useState('');
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
+    const updateTime = () => {
+      const now = new Date().toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+      });
+      setTime(now);
+    };
 
-    return () => clearInterval(timer);
+    updateTime(); // Atualiza imediatamente ao montar
+    const interval = setInterval(updateTime, 1000);
+
+    return () => clearInterval(interval); // Limpa o intervalo ao desmontar
   }, []);
 
-  const formatTime = (date: Date) => {
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const seconds = date.getSeconds().toString().padStart(2, '0');
-    
-    return `${hours}:${minutes}:${seconds}`;
-  };
-
   return (
-    <div className="text-center">
-      <div className="text-xs font-mono font-bold text-gray-800">
-        {formatTime(time)}
-      </div>
+    <div className="text-xs font-mono font-bold text-gray-800">
+      {time}
     </div>
   );
-} 
+}

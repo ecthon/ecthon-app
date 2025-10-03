@@ -4,7 +4,7 @@ import { Clock01Icon, GithubIcon, Linkedin02Icon, Location01Icon, TelegramIcon }
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
-import { Clock } from "@/components/clock";
+import Clock from "./clock";
 
 export function Profile() {
     return (
