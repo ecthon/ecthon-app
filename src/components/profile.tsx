@@ -10,7 +10,7 @@ export function Profile() {
     return (
         <div className="flex flex-col md:flex-row w-full max-w-[1096px] mx-auto items-center justify-between p-4 gap-4">
             <div className="flex items-center space-x-4">
-                <Image src={'https://github.com/ecthon.png'} alt="Avatar" width={64} height={64} className="rounded-full" />
+                <Image src={'https://github.com/ecthon.png'} alt="Avatar" width={64} height={64} className="rounded-full border-2 border-zinc-300" />
                 <div className="flex flex-col">
                     <p className="font-semibold text-zinc-900">Ecthon Almeida</p>
                     <div className="flex items-center space-x-4">
