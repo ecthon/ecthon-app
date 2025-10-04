@@ -26,15 +26,18 @@ export function Profile() {
                 </div>
             </div>
 
-            <div className="flex items-center space-x-1">
-                <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
-                    <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-500" />
-                </Link>
-                <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
-                    <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-500" />
-                </Link>
-                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-zinc-100 bg-zinc-900 text-xs">
-                    <HugeiconsIcon icon={TelegramIcon} size={18} strokeWidth={2} className="text-zinc-500 group-hover:text-orange-500 transition-colors duration-300" />
+            <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-1">
+                    <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                        <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-900" />
+                    </Link>
+                    <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                        <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-900" />
+                    </Link>
+                </div>
+                <div className="flex h-5 w-0.5 rounded-full bg-zinc-300" />
+                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-zinc-300 bg-zinc-900 text-xs">
+                    <HugeiconsIcon icon={TelegramIcon} size={18} strokeWidth={2} className="text-zinc-100 group-hover:text-orange-500 transition-colors duration-300" />
                     Send message
                 </button>
             </div>
