@@ -18,11 +18,11 @@ export function Profile() {
                     </div>
 
                     <div className="flex items-center space-x-1">
-                        <div className="group flex items-center space-x-1 hover:bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
+                        <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
                             <HugeiconsIcon icon={Location01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />
                             <p className="text-zinc-500 text-xs">Manaus/AM</p>
                         </div>
-                        <div className="group flex items-center space-x-1 hover:bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
+                        <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
                             <HugeiconsIcon icon={Clock01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />
                             <Clock />
                         </div>
@@ -32,10 +32,10 @@ export function Profile() {
 
             <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">
-                    <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg bg-zinc-100 transition-colors">
+                    <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
                         <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-900" />
                     </Link>
-                    <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg bg-zinc-100 transition-colors">
+                    <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
                         <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-900" />
                     </Link>
                 </div>
