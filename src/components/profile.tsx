@@ -11,7 +11,7 @@ export function Profile() {
         <div className="flex flex-col md:flex-row w-full max-w-[1096px] mx-auto items-center justify-between p-4 gap-4">
             <div className="flex max-sm:flex-col max-sm:w-full max-sm:space-y-2 items-center space-x-4">
                 <Image src={'https://github.com/ecthon.png'} alt="Avatar" width={64} height={64} className="rounded-full border-2 border-zinc-300" />
-                <div className="flex flex-col space-y-1">
+                <div className="flex max-sm:items-center flex-col space-y-1">
                     <div className="flex items-center gap-1">
                         <p className="font-semibold text-zinc-900">Ecthon Almeida</p>
                         <HugeiconsIcon icon={CheckmarkBadge01Icon} size={14} strokeWidth={2} className="text-indigo-400 group-hover:text-indigo-600" />
@@ -32,10 +32,10 @@ export function Profile() {
 
             <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">
-                    <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                    <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg bg-zinc-100 transition-colors">
                         <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-900" />
                     </Link>
-                    <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
+                    <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg bg-zinc-100 transition-colors">
                         <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-900" />
                     </Link>
                 </div>
