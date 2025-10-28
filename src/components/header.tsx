@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Header() {
     return (
-        <header className="flex items-center justify-between py-4 px-4 md:px-10 text-white border-b border-zinc-200">
+        <header className="flex max-w-[1096px] w-full max-sm:px-4 items-center justify-between py-4 mx-auto text-white border-b border-zinc-200">
             <Link href={'/'} className="text-zinc-900 font-bold">Base²²</Link>
             <div className="flex items-center space-x-4">
                 <HugeiconsIcon icon={EnergyIcon} size={20} strokeWidth={2} className="text-zinc-500" />
