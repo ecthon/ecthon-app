@@ -22,7 +22,7 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className="text-xs font-mono font-bold text-gray-800">
+    <div className="text-xs max-sm:text-[11px] font-mono font-bold text-gray-800">
       {time}
     </div>
   );

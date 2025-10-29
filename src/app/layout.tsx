@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fira_Code } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-const firacode = Fira_Code({
-  variable: "--font-firacode",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firacode.variable} antialiased bg-background text-foreground`}
+        className={`${manrope.variable} antialiased bg-background text-foreground`}
       >
         <div className="flex flex-col w-full space-y-6">
           <Header />

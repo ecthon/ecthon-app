@@ -20,7 +20,7 @@ export function Profile() {
                     <div className="flex items-center space-x-1">
                         <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
                             <HugeiconsIcon icon={Location01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />
-                            <p className="text-zinc-500 text-xs">Manaus/AM</p>
+                            <p className="text-zinc-500 text-xs max-sm:text-[11px]">Manaus • AM</p>
                         </div>
                         <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
                             <HugeiconsIcon icon={Clock01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />
@@ -40,8 +40,8 @@ export function Profile() {
                     </Link>
                 </div>
                 <div className="flex h-5 w-[1px] rounded-full bg-zinc-300" />
-                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-indigo-50 hover:text-white bg-indigo-500 text-xs">
-                    <HugeiconsIcon icon={Message01Icon} size={18} strokeWidth={2} className="text-white transition-colors duration-300" />
+                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-indigo-500 hover:text-white bg-indigo-500/40 text-xs max-sm:text-[11px]">
+                    <HugeiconsIcon icon={Message01Icon} size={18} strokeWidth={2} className="text-indigo-500 transition-colors duration-300" />
                     Send message
                 </button>
             </div>
