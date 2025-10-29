@@ -33,15 +33,15 @@ export function Profile() {
             <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">
                     <Link href={'https://www.linkedin.com/in/ecthon/'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
-                        <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-900" />
+                        <HugeiconsIcon icon={Linkedin02Icon} size={18} strokeWidth={2} className="text-zinc-500" />
                     </Link>
                     <Link href={'https://github.com/ecthon'} target="_blank" rel="noopener noreferrer" className="group flex p-1.5 border border-transparent max-sm:border-zinc-200 rounded-lg hover:bg-zinc-100 transition-colors">
-                        <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-900" />
+                        <HugeiconsIcon icon={GithubIcon} size={18} strokeWidth={2} className="text-zinc-500" />
                     </Link>
                 </div>
                 <div className="flex h-5 w-[1px] rounded-full bg-zinc-300" />
-                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-indigo-500 hover:text-white bg-indigo-500/40 text-xs max-sm:text-[11px]">
-                    <HugeiconsIcon icon={Message01Icon} size={18} strokeWidth={2} className="text-indigo-500 transition-colors duration-300" />
+                <button className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold text-indigo-600 hover:bg-indigo-600/25 bg-indigo-600/20 text-xs max-sm:text-[11px]">
+                    <HugeiconsIcon icon={Message01Icon} size={18} strokeWidth={2} className="text-indigo-600 transition-colors duration-300" />
                     Send message
                 </button>
             </div>
