@@ -1,26 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useClock } from "@/hooks/useClock";
 
 export default function Clock() {
-  const [time, setTime] = useState('');
-
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date().toLocaleTimeString('pt-BR', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-      });
-      setTime(now);
-    };
-
-    updateTime(); // Atualiza imediatamente ao montar
-    const interval = setInterval(updateTime, 1000);
-
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar
-  }, []);
-
+  const time = useClock();
   return (
     <div className="text-xs max-sm:text-[11px] font-semibold text-gray-900">
       {time}
