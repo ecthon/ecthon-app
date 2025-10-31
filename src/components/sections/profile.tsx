@@ -4,7 +4,7 @@ import { CheckmarkBadge01Icon, Clock01Icon, GithubIcon, Linkedin02Icon, Location
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
-import Clock from "./clock";
+import Clock from "../ui/clock";
 
 export function Profile() {
     return (
