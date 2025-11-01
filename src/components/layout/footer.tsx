@@ -14,7 +14,7 @@ export function Footer() {
                 <button
                     onClick={scrollToTop}
                     aria-label="Voltar ao topo"
-                    className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold bg-zinc-100 text-xs max-sm:text-[11px]"
+                    className="group flex h-[32px] items-center gap-1 px-2.5 justify-center rounded-lg cursor-pointer font-semibold bg-zinc-50"
                 >
                     <HugeiconsIcon icon={ArrowUp01Icon} size={18} strokeWidth={2} className="text-indigo-500 transition-colors duration-300" />
                 </button>
