@@ -14,7 +14,7 @@ export function Hero() {
                     height={32}
                     className="rounded-full border border-zinc-300"
                 />
-                <h1 className="font-semibold text-indigo-500 text-md max-sm:text-[14px] leading-none px-1">ecthon almeida</h1>
+                <h1 className="font-semibold text-zinc-900 text-md max-sm:text-[14px] leading-none px-1">ecthon almeida</h1>
             </div>
 
             <div className="flex flex-col space-y-6 w-full">
