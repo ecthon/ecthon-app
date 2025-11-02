@@ -2,7 +2,7 @@ import { Github01Icon, InternetIcon, Linkedin01Icon } from "@hugeicons/core-free
 
 export const sociaLinks = [
     {
-        label: 'site',
+        label: 'ecthon.me',
         url: 'https://ecthon.me',
         icon: InternetIcon, // Componente, não string
     },
