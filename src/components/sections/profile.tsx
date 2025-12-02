@@ -11,7 +11,7 @@ interface ProfileProps {
     data: ProfileData;
 }
 
-export function Profile({ data }: ProfileProps) {
+export function MyLinks({ data }: ProfileProps) {
     return (
         <div className="flex flex-col w-full max-w-lg mx-auto p-4 gap-4 mt-16">
             <div className="flex flex-col items-center gap-4 w-full">
