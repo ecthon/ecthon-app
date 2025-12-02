@@ -30,7 +30,7 @@ export function Hero() {
                 <div className="flex flex-wrap w-full justify-center items-center gap-2">
                     <div className="group flex items-center space-x-1 px-2 py-1 rounded-full transition-colors duration-300 bg-zinc-100">
                         <HugeiconsIcon icon={Location01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />
-                        <p className="text-zinc-500 text-sm sm:text-md max-sm:text-[11px]">Manaus • AM</p>
+                        <p className="text-zinc-500 text-xs sm:text-md max-sm:text-[11px]">Manaus • AM</p>
                     </div>
                     <div className="group flex items-center space-x-1 px-2 py-1 rounded-full transition-colors duration-300 bg-zinc-100">
                         <HugeiconsIcon icon={Clock01Icon} size={14} strokeWidth={2} className="text-zinc-500 group-hover:text-indigo-600" />

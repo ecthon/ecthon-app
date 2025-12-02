@@ -10,7 +10,7 @@ export function SendMessage() {
                     <p className="text-white max-sm:text-[13px] font-semibold">Vamos conversar!</p>
                 </div>
                 <div className="flex size-8 rounded-full items-center justify-center border-2 border-zinc-700">
-                    <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={3} className="text-white group-hover:text-indigo-500 transition-colors duration-300" />
+                    <HugeiconsIcon icon={ArrowUpRight01Icon} size={14} strokeWidth={3} className="text-zinc-300 group-hover:text-white transition-colors duration-300" />
                 </div>
             </div>
         </div>

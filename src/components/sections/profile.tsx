@@ -8,49 +8,49 @@ import Clock from "../ui/clock";
 import type { ProfileData } from "@/types/profile";
 
 interface ProfileProps {
-  data: ProfileData;
+    data: ProfileData;
 }
 
 export function Profile({ data }: ProfileProps) {
     return (
         <div className="flex flex-col w-full max-w-lg mx-auto p-4 gap-4 mt-16">
             <div className="flex flex-col items-center gap-4 w-full">
-                <Image 
-                    src={data.avatarUrl} 
-                    alt={`${data.name} avatar`} 
-                    width={64} 
-                    height={64} 
-                    className="rounded-full border-2 border-zinc-300" 
+                <Image
+                    src={data.avatarUrl}
+                    alt={`${data.name} avatar`}
+                    width={64}
+                    height={64}
+                    className="rounded-full border-2 border-zinc-300"
                 />
                 <div className="flex flex-col items-center gap-2">
                     <div className="flex items-center gap-1">
                         <p className="font-semibold text-zinc-900">{data.name}</p>
                         {data.verified && (
-                            <HugeiconsIcon 
-                                icon={CheckmarkBadge01Icon} 
-                                size={14} 
-                                strokeWidth={2} 
-                                className="text-indigo-400 group-hover:text-indigo-600" 
+                            <HugeiconsIcon
+                                icon={CheckmarkBadge01Icon}
+                                size={14}
+                                strokeWidth={2}
+                                className="text-indigo-400 group-hover:text-indigo-600"
                             />
                         )}
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-2">
                         <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
-                            <HugeiconsIcon 
-                                icon={Location01Icon} 
-                                size={14} 
-                                strokeWidth={2} 
-                                className="text-zinc-500 group-hover:text-indigo-600" 
+                            <HugeiconsIcon
+                                icon={Location01Icon}
+                                size={14}
+                                strokeWidth={2}
+                                className="text-zinc-500 group-hover:text-indigo-600"
                             />
-                            <p className="text-zinc-500 text-xs">{data.location}</p>
+                            <p className="text-zinc-500 text-xs max-sm:text-[11px]">{data.location}</p>
                         </div>
                         <div className="group flex items-center space-x-1 bg-zinc-100 px-2 py-1 rounded-full transition-colors duration-300">
-                            <HugeiconsIcon 
-                                icon={Clock01Icon} 
-                                size={14} 
-                                strokeWidth={2} 
-                                className="text-zinc-500 group-hover:text-indigo-600" 
+                            <HugeiconsIcon
+                                icon={Clock01Icon}
+                                size={14}
+                                strokeWidth={2}
+                                className="text-zinc-500 group-hover:text-indigo-600"
                             />
                             <Clock />
                         </div>
@@ -60,19 +60,19 @@ export function Profile({ data }: ProfileProps) {
 
             <div className="flex w-full flex-col gap-2 my-5">
                 {data.socialLinks.map((link) => (
-                    <Link 
-                        key={link.label} 
-                        href={link.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                    <Link
+                        key={link.label}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group w-full max-w-full mx-auto flex items-center gap-2 bg-zinc-100 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-zinc-200"
                     >
                         <div className="flex size-8 shrink-0 items-center justify-center bg-white/50 rounded-full p-1">
-                            <HugeiconsIcon 
-                                icon={link.icon} 
-                                size={20} 
-                                strokeWidth={2} 
-                                className="text-zinc-500 group-hover:text-indigo-600" 
+                            <HugeiconsIcon
+                                icon={link.icon}
+                                size={20}
+                                strokeWidth={2}
+                                className="text-zinc-500 group-hover:text-indigo-600"
                             />
                         </div>
                         <p className="text-zinc-500 font-medium text-sm">{link.label}</p>
