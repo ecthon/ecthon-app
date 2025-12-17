@@ -75,7 +75,7 @@ export function MyLinks({ data }: ProfileProps) {
                                 className="text-zinc-500 group-hover:text-indigo-600"
                             />
                         </div>
-                        <p className="text-zinc-500 font-medium text-sm">{link.label}</p>
+                        <p className="text-zinc-600 font-medium text-sm">{link.label}</p>
                     </Link>
                 ))}
             </div>
