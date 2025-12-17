@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} antialiased bg-background text-foreground`}
       >
-        <div className="flex flex-col w-full space-y-6">
+        <div className="flex flex-col w-full">
           {children}
         </div>
       </body>
