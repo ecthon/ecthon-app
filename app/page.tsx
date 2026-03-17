@@ -7,24 +7,24 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex-col items-center justify-center w-3xl h-screen mx-auto">
-      <header className="flex w-full h-12 py-8 justify-between items-center border-b border-zinc-900">
+    <main className="flex-col items-center justify-center w-full max-w-3xl px-6 md:px-0 min-h-screen mx-auto">
+      <header className="flex w-full py-8 justify-between items-center border-b border-zinc-900">
         <Link href="/">
-          <h1 className="text-sm font-semibold text-white px-4 py-2 hover:bg-zinc-900 font-sans transition-colors duration-300 rounded-lg">ecthon.dev</h1>
+          <h1 className="text-sm font-semibold text-white px-4 py-2 hover:bg-zinc-900 font-sans transition-colors duration-300 rounded-lg -ml-4 md:ml-0">ecthon.dev</h1>
         </Link>
         <div>
-          <div className="group flex h-auto px-4 py-2 items-center justify-center hover:bg-zinc-900 transition-colors duration-300 rounded-lg gap-2">
+          <div className="group flex h-auto px-4 py-2 items-center justify-center hover:bg-zinc-900 transition-colors duration-300 rounded-lg gap-2 -mr-4 md:mr-0 cursor-pointer">
             <p className="text-[11px] font-semibold text-zinc-200 font-sans transition-colors duration-300">Enviar mensagem</p>
             <HugeiconsIcon icon={ArrowUpRightIcon} size={16} color="currentColor" strokeWidth={2} className="text-zinc-200 transition-colors duration-300" />
           </div>
         </div>
       </header>
-      <div className="flex flex-col gap-4 my-20">
-        <div className="flex flex-col gap-2">
-          <p className="text-5xl w-2xs font-semibold text-white font-sans">Integrando</p>
-          <p className="text-5xl font-semibold text-white font-sans">design e código.</p>
+      <div className="flex flex-col gap-4 my-12 md:my-20">
+        <div className="flex flex-col gap-1 md:gap-2">
+          <p className="text-4xl md:text-5xl md:w-2xs font-semibold text-white font-sans leading-tight">Integrando</p>
+          <p className="text-4xl md:text-5xl font-semibold text-white font-sans leading-tight">design e código.</p>
         </div>
-        <p className="text-lg text-white/60 font-sans">Criando interfaces que equilibram usabilidade, performance e estética.</p>
+        <p className="text-base md:text-lg text-white/60 font-sans max-w-[280px] md:max-w-none">Criando interfaces que equilibram usabilidade, performance e estética.</p>
       </div>
       <Works />
       <Experience />
