@@ -1,4 +1,5 @@
 import { Experience } from "@/components/experience/experience";
+import { Footer } from "@/components/footer";
 import { Works } from "@/components/works/works";
 import { Location06Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -27,6 +28,7 @@ export default function Home() {
       </div>
       <Works />
       <Experience />
+      <Footer />
     </main>
   );
 }
