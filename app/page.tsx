@@ -1,7 +1,7 @@
 import { Experience } from "@/components/experience/experience";
 import { Footer } from "@/components/footer";
 import { Works } from "@/components/works/works";
-import { Location06Icon } from "@hugeicons/core-free-icons";
+import { ArrowUpRight, ArrowUpRightIcon, Location06Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 
@@ -14,8 +14,8 @@ export default function Home() {
         </Link>
         <div>
           <div className="group flex h-auto px-4 py-2 items-center justify-center hover:bg-zinc-900 transition-colors duration-300 rounded-lg gap-2">
-            <HugeiconsIcon icon={Location06Icon} size={16} color="currentColor" strokeWidth={2} className="text-zinc-200 transition-colors duration-300" />
-            <p className="text-[11px] font-semibold text-zinc-200 font-sans transition-colors duration-300">Manaus/AM, Brazil</p>
+            <p className="text-[11px] font-semibold text-zinc-200 font-sans transition-colors duration-300">Enviar mensagem</p>
+            <HugeiconsIcon icon={ArrowUpRightIcon} size={16} color="currentColor" strokeWidth={2} className="text-zinc-200 transition-colors duration-300" />
           </div>
         </div>
       </header>
