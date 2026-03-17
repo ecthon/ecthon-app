@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { ElasticHover, ElasticHoverItem } from "../ui/elastic-hover";
+import Link from "next/link";
 
 export function Works() {
     return (
@@ -19,7 +19,7 @@ export function Works() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full min-h-[250px] md:min-h-0 md:row-span-2">
+                <Link href="https://boarding-pass-seven.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex w-full min-h-[250px] md:min-h-0 md:row-span-2">
                     <div className="group relative flex border border-zinc-900 items-center justify-center flex-1 h-full rounded-2xl overflow-hidden cursor-pointer">
                         <div className="flex w-full h-full flex-col justify-end transition-transform duration-500 ease-out group-hover:scale-110">
                             <Image src="/ticket.svg" alt="Work 1" width={400} height={400} className="w-full h-full object-cover" />
@@ -29,7 +29,7 @@ export function Works() {
                             <p className="text-lg font-bold text-white font-sans text-left">Cartão de embarque</p>
                         </div>
                     </div>
-                </div>
+                </Link>
                 <div className="flex w-full min-h-[120px] md:min-h-0 md:row-span-1">
                     <div className="group relative flex border border-zinc-900 items-center justify-center flex-1 rounded-2xl font-medium overflow-hidden cursor-pointer">
                         <div className="flex w-full h-full p-6 items-center justify-center transition-transform duration-500 ease-out group-hover:scale-110">
@@ -42,6 +42,6 @@ export function Works() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
