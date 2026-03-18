@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Works() {
     return (
-        <section className="flex flex-col gap-4 mt-20">
+        <section className="flex flex-col gap-4">
             <div
                 className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
             >

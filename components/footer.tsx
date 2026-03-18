@@ -4,7 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 
 export function Footer() {
     return (
-        <footer className="flex flex-col md:flex-row items-center md:items-center justify-center md:justify-start gap-6 md:gap-4 mt-10 py-6">
+        <footer className="flex flex-col md:flex-row items-center md:items-center justify-center md:justify-start gap-6 md:gap-4 py-6">
             <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="group flex shrink-0 items-center size-12 rounded-full justify-center cursor-pointer bg-zinc-900 transition-colors duration-300">
                 <HugeiconsIcon icon={ArrowUp01Icon} size={20} color="currentColor" strokeWidth={2} className="text-zinc-200 group-hover:-mt-1 transition-all duration-300" />
             </button>
