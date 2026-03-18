@@ -1,14 +1,12 @@
 "use client";
 
-import { ArrowExpandIcon, ArrowShrinkIcon, Copy01Icon, Exchange01Icon, HugeiconsFreeIcons, InformationCircleFreeIcons } from "@hugeicons/core-free-icons";
+import { ArrowExpandIcon, ArrowShrinkIcon, Copy01Icon, Exchange01Icon, HugeiconsFreeIcons } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useEffect, useState } from "react";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 
 export function FreeHash() {
     const [hash, setHash] = useState("");
     const [rotation, setRotation] = useState(0);
-    const [showAlert, setShowAlert] = useState(false);
 
     const gerarHash = () => {
         const novoHash = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -19,7 +17,6 @@ export function FreeHash() {
     useEffect(() => {
         gerarHash();
     }, []);
-
 
     return (
         <div className="relative w-full rounded-3xl p-px overflow-hidden group border border-transparent">
@@ -48,15 +45,11 @@ export function FreeHash() {
                             type="text"
                             readOnly
                             value={hash}
-                            className="w-full h-12 px-4 text-blue-400 bg-transparent outline-none font-mono text-xs tracking-widest"
+                            className="w-full h-12 px-4 text-blue-400 bg-transparent outline-none font-mono text-sm tracking-widest"
                             placeholder="Gerando hash..."
                         />
                         <button
-                            onClick={() => {
-                                navigator.clipboard.writeText(hash);
-                                setShowAlert(true);
-                                setTimeout(() => setShowAlert(false), 3000);
-                            }}
+                            onClick={() => navigator.clipboard.writeText(hash)}
                             className="group/copy shrink-0 flex items-center justify-center size-12 hover:bg-zinc-800 transition-colors duration-300 rounded-lg cursor-pointer"
                             title="Copiar hash"
                         >
@@ -78,19 +71,6 @@ export function FreeHash() {
                     </button>
                 </div>
             </section>
-
-            {/* Alerta Estilo Toast */}
-            {showAlert && (
-                <div className="fixed bottom-6 right-6 z-50 animate-in fade-in slide-in-from-bottom-5 duration-300">
-                    <Alert className="bg-zinc-950/90 backdrop-blur-xl border border-blue-500/30 shadow-[0_0_20px_rgba(37,99,235,0.15)] text-white w-80">
-                        <HugeiconsIcon icon={InformationCircleFreeIcons} size={20} className="text-blue-400" />
-                        <AlertTitle className="text-blue-400 font-semibold">Copiado!</AlertTitle>
-                        <AlertDescription className="text-zinc-400">
-                            O hash foi copiado para a sua área de transferência.
-                        </AlertDescription>
-                    </Alert>
-                </div>
-            )}
         </div>
     );
 }
