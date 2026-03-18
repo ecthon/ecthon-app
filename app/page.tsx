@@ -1,7 +1,6 @@
 "use client";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
-import { FreeHash } from "@/components/free-hash";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Works } from "@/components/works";
@@ -13,7 +12,6 @@ export default function Home() {
       <Hero />
       <Works />
       <Experience />
-      <FreeHash />
       <Footer />
     </main>
   );
