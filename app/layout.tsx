@@ -4,10 +4,10 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+  variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
