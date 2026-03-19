@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: " ecthon",
+  title: "• ecthon",
   description: "Software Developer and UI Design",
 };
 
