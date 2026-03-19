@@ -2,29 +2,12 @@
 import { ArrowExpandIcon, ArrowShrinkIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useFullscreen } from "../hooks/use-fullscreen";
 
 import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
-    const [isFullscreen, setIsFullscreen] = useState(false);
-
-    const toggleFullscreen = () => {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
-        } else {
-            document.exitFullscreen();
-        }
-    };
-
-    useEffect(() => {
-        const handler = () => {
-            setIsFullscreen(!!document.fullscreenElement);
-        };
-
-        document.addEventListener("fullscreenchange", handler);
-        return () => document.removeEventListener("fullscreenchange", handler);
-    }, []);
+    const { isFullscreen, toggleFullscreen } = useFullscreen();
     return (
         <header className="flex w-full py-6 justify-between items-center border-b border-zinc-200 dark:border-zinc-900">
             <Link href="/">
