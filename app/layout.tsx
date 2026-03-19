@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: " ecthon",
-  description: "Software developer and UI Design",
+  description: "Software Developer and UI Design",
 };
 
 export default function RootLayout({
