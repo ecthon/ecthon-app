@@ -38,7 +38,6 @@ export function Hero() {
                         <span className="text-zinc-300 dark:text-zinc-700/50">•</span>
                         <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-500">{temperature}°C</span>
                     </div>
-
                 </div>
             </div>
         </div>
