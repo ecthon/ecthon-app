@@ -8,8 +8,8 @@ export function Footer() {
         <footer className="flex flex-col md:flex-row items-center justify-between gap-6 py-6 w-full border-t border-zinc-200 dark:border-zinc-800">
             {/* Esquerda: Botão Voltar ao Topo e Copyright */}
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-4">
-                <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="group flex shrink-0 items-center size-12 rounded-full justify-center cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:bg-zinc-300 dark:hover:bg-zinc-800 transition-colors duration-300">
-                    <HugeiconsIcon icon={ArrowUp01Icon} size={20} color="currentColor" strokeWidth={2} className="text-zinc-600 dark:text-zinc-200 group-hover:-mt-1 transition-all duration-300" />
+                <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="group flex shrink-0 items-center size-12 rounded-full justify-center cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:bg-indigo-500 dark:hover:bg-indigo-500 transition-colors duration-300">
+                    <HugeiconsIcon icon={ArrowUp01Icon} size={20} color="currentColor" strokeWidth={2} className="text-zinc-600 dark:text-zinc-200 group-hover:text-white transition-all duration-300 group-hover:-mt-1" />
                 </button>
                 <div className="flex flex-col items-center md:items-start text-center md:text-left">
                     <div className="flex flex-wrap justify-center md:justify-start gap-1 md:gap-2">

@@ -11,7 +11,7 @@ export function Header() {
     return (
         <header className="flex w-full py-6 justify-between items-center border-b border-zinc-200 dark:border-zinc-900">
             <Link href="/">
-                <h1 className="text-sm font-semibold text-zinc-900 dark:text-white px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 font-sans transition-colors duration-300 rounded-lg -ml-4 md:ml-0">ecthon</h1>
+                <h1 className="text-sm font-semibold text-zinc-900 dark:text-white px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 font-sans transition-colors duration-300 rounded-lg -ml-4 md:ml-0">ecthon<span className="text-indigo-500">.</span></h1>
             </Link>
             <div className="flex items-center gap-2">
                 <ThemeToggle />

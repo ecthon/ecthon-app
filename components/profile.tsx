@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Profile() {
     return (
         <div className="flex w-full items-center gap-4 p-4 border-b border-zinc-200 dark:border-zinc-800">
-            <div className="flex items-center justify-between size-12 border-dashed border-2 border-zinc-300 dark:border-white/20 rounded-full overflow-hidden">
+            <div className="flex items-center justify-between size-12 border-dashed border-2 border-indigo-500/50 dark:border-indigo-500/60 rounded-full overflow-hidden">
                 <Image src="/avatarbw.jpeg" alt="Avatar" width={100} height={100} />
             </div>
             <div className="flex flex-col">
