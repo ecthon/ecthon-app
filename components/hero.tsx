@@ -49,11 +49,11 @@ export function Hero() {
                         {/* Localização e Clima */}
                         <div className="flex items-center gap-2 sm:gap-3">
                             <Separator orientation="vertical" />
-                            <div className="hidden sm:flex items-center gap-1.5">
+                            <div className="flex sm:w-full items-center gap-1.5">
                                 <HugeiconsIcon icon={Location01Icon} size={16} strokeWidth={2.5} className="text-zinc-400 dark:text-zinc-600" />
                                 <span className="text-sm font-medium text-zinc-500 dark:text-zinc-600">Manaus</span>
                             </div>
-                            <span className="hidden sm:block text-zinc-300 dark:text-zinc-700/50">•</span>
+                            <span className="sm:block text-zinc-300 dark:text-zinc-700/50">•</span>
                             <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-500 shrink-0">{temperature}°C</span>
                         </div>
                     </div>
