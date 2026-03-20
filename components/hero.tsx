@@ -25,7 +25,7 @@ export function Hero() {
             <div className="flex flex-col md:flex-row w-full justify-between items-center mt-4 md:mt-0 gap-4 md:gap-0">
 
                 {/* Botão Call to Action (Altura: 60px) */}
-                <Link href="#" className="group flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 w-full sm:w-fit shrink-0 md:mb-8">
+                <Link href="#" className="group sm:w-3/5 flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 w-full sm:w-fit shrink-0 md:mb-8">
                     <span>Enviar mensagem</span>
                     {/* Círculo interno fixo para caber perfeitamente nos 60px */}
                     <div className="flex rounded-full size-11 shrink-0 bg-white dark:bg-zinc-900 items-center justify-center transition-transform duration-300 border border-transparent dark:border-indigo-400">
