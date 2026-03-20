@@ -5,6 +5,7 @@ import { useTime } from "../hooks/use-time";
 import { ArrowRight02Icon, Location01Icon } from "@hugeicons/core-free-icons";
 import { useTemperature } from "../hooks/use-temperature";
 import Link from "next/link";
+import { Separator } from "./ui/separator";
 
 export function Hero() {
     const { hours, minutes, seconds } = useTime();
@@ -22,10 +23,10 @@ export function Hero() {
             </div>
 
             {/* Ajuste de Responsividade: Empilhados e alinhados simetricamente no Mobile */}
-            <div className="flex flex-col md:flex-row w-full justify-between items-center mt-4 md:mt-0 gap-4 md:gap-0">
+            <div className="flex flex-col md:flex-row w-full justify-between items-start md:items-center mt-4 md:mt-0 gap-4 md:gap-0">
 
                 {/* Botão Call to Action (Altura: 60px) */}
-                <Link href="#" className="group sm:w-3/5 flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 w-full sm:w-fit shrink-0 md:mb-8">
+                <Link href="#" className="group sm:w-fit flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 w-4/5 shrink-0 md:mb-8">
                     <span>Enviar mensagem</span>
                     {/* Círculo interno fixo para caber perfeitamente nos 60px */}
                     <div className="flex rounded-full size-11 shrink-0 bg-white dark:bg-zinc-900 items-center justify-center transition-transform duration-300 border border-transparent dark:border-indigo-400">
@@ -44,10 +45,10 @@ export function Hero() {
                         </div>
 
                         {/* Divisor Separador */}
-                        <div className="hidden sm:block w-[1px] h-6 bg-zinc-200 dark:bg-zinc-800/60"></div>
 
                         {/* Localização e Clima */}
                         <div className="flex items-center gap-2 sm:gap-3">
+                            <Separator orientation="vertical" />
                             <div className="hidden sm:flex items-center gap-1.5">
                                 <HugeiconsIcon icon={Location01Icon} size={16} strokeWidth={2.5} className="text-zinc-400 dark:text-zinc-600" />
                                 <span className="text-sm font-medium text-zinc-500 dark:text-zinc-600">Manaus</span>
