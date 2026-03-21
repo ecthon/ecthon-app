@@ -24,6 +24,6 @@ export const myLinks = [
     {
         icon: DiscordIcon,
         title: "Discord",
-        url: "https://discord.gg/410203483761803284",
+        url: "https://discord.gg/zdNXzBB46h",
     },
 ];
