@@ -26,9 +26,18 @@ export function Hero() {
 
                 <Link href="#" className="group sm:w-fit flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 w-4/5 shrink-0 md:mb-8">
                     <span>Enviar mensagem</span>
-                    <div className="flex rounded-full size-11 shrink-0 bg-white dark:bg-zinc-900 items-center justify-center transition-transform duration-300 border-4 border-transparent dark:border-indigo-400">
-                        <HugeiconsIcon icon={ArrowRight02Icon} size={20} strokeWidth={2.5} className="text-zinc-900 dark:text-white group-hover:-rotate-45 transition-transform duration-300" />
+                    <div className="relative flex items-center justify-center">
+                        {/* Efeito de borda pulsante atrás do botão */}
+                        <div className="absolute rounded-full size-11 border-4 border-indigo-400 animate-ping opacity-75"></div>
+
+                        {/* Seu botão/div original */}
+                        <div className="flex rounded-full size-11 shrink-0 bg-white dark:bg-zinc-900 items-center justify-center transition-transform duration-300 border-4 border-transparent dark:border-indigo-400 animate-[pulse-border_2s_ease-in-out_infinite]">
+                            <HugeiconsIcon icon={ArrowRight02Icon} size={20} strokeWidth={2.5} className="text-zinc-900 dark:text-white group-hover:-rotate-45 transition-transform duration-300" />
+                        </div>
+
                     </div>
+
+
                 </Link>
 
                 <div className="flex w-full md:w-auto mt-2 md:mt-0 mb-10 md:mb-8 shrink-0">
