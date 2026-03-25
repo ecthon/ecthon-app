@@ -1,5 +1,5 @@
 import { LinkCard } from "./link-card";
-import { myLinks } from "./all-links";
+import { LINKS_DATA } from "@/constants/data";
 import Image from "next/image";
 import { EnergyIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -19,7 +19,7 @@ export default function LinksPage() {
                     </div>
                 </div>
                 <div className="flex flex-col w-full items-center justify-center p-2 sm:p-0 sm:gap-0">
-                    {myLinks.map((link) => (
+                    {LINKS_DATA.map((link) => (
                         <LinkCard
                             key={link.title}
                             icon={link.icon}

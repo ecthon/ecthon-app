@@ -1,7 +1,8 @@
 "use client";
-import { ArrowUp01Icon, InstagramIcon, Linkedin01Icon, GithubIcon } from "@hugeicons/core-free-icons";
+import { ArrowUp01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
+import { SOCIAL_LINKS } from "@/constants/data";
 
 export function Footer() {
     return (
@@ -22,16 +23,20 @@ export function Footer() {
 
             {/* Direita: Redes Sociais */}
             <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3">
-                <Link href="https://instagram.com/ecthon" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-[10px] bg-zinc-200 dark:bg-zinc-900 hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-full transition-colors duration-300">
-                    <HugeiconsIcon icon={InstagramIcon} size={20} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200" />
-                    <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">ecthon</span>
-                </Link>
-                <Link href="https://linkedin.com/in/ecthon" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center size-[40px] md:size-11 bg-zinc-200 dark:bg-zinc-900 hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-full transition-colors duration-300">
-                    <HugeiconsIcon icon={Linkedin01Icon} size={20} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200" />
-                </Link>
-                <Link href="https://github.com/ecthon" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center size-[40px] md:size-11 bg-zinc-200 dark:bg-zinc-900 hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-full transition-colors duration-300">
-                    <HugeiconsIcon icon={GithubIcon} size={20} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200" />
-                </Link>
+                {SOCIAL_LINKS.map((link) => (
+                    <Link 
+                        key={link.name} 
+                        href={link.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={`flex items-center justify-center hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-full transition-colors duration-300 bg-zinc-200 dark:bg-zinc-900 ${link.showName ? 'gap-2 px-4 py-[10px]' : 'size-[40px] md:size-11'}`}
+                    >
+                        <HugeiconsIcon icon={link.icon} size={20} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200" />
+                        {link.showName && (
+                            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{link.name}</span>
+                        )}
+                    </Link>
+                ))}
             </div>
         </footer>
     );

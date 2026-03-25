@@ -1,38 +1,47 @@
-import { CodeSquareIcon, CursorEdit02FreeIcons, DatabaseLightningIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { EXPERIENCES_DATA } from "@/constants/data";
 
 export function Experience() {
     return (
-        <section className="flex flex-col gap-8 md:gap-10 mt-12 md:mt-20">
+        <section aria-labelledby="experience-title" className="flex flex-col gap-8 md:gap-10 mt-12 md:mt-20">
+
             <div className="group flex items-center gap-2">
-                <div className="flex flex-col">
-                    <p className="text-3xl font-semibold text-zinc-900 dark:text-white font-sans">Experiência</p>
-                    <p className="text-3xl font-normal text-zinc-500 font-sans">nas seguintes áreas </p>
-                </div>
+                <h2 id="experience-title" className="flex flex-col">
+                    <span className="text-3xl font-semibold text-zinc-900 dark:text-white font-sans">
+                        Experiência
+                    </span>
+                    <span className="text-3xl font-normal text-zinc-500 font-sans">
+                        nas seguintes áreas
+                    </span>
+                </h2>
             </div>
-            <div className="flex flex-col md:flex-row gap-4">
-                <div className="flex flex-1 h-32 flex-col gap-4 items-start p-6 justify-center bg-zinc-100 dark:bg-zinc-900 rounded-2xl w-full">
-                    <div className="flex flex-col gap-2">
-                        <HugeiconsIcon icon={CursorEdit02FreeIcons} size={24} color="currentColor" strokeWidth={2} className="text-indigo-500 dark:text-indigo-400 transition-colors duration-300" />
-                        <p className="text-sm font-semibold text-zinc-900 dark:text-white font-sans">UI Design</p>
+
+            <div className="flex flex-col md:flex-row gap-4 w-full">
+                {EXPERIENCES_DATA.map((exp: any, index: number) => (
+                    <div
+                        key={index}
+                        className="flex flex-1 flex-col h-32 justify-between items-start p-6 bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800/50 hover:bg-zinc-200/60 rounded-2xl w-full border border-transparent dark:hover:border-zinc-700/50 hover:shadow-sm hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <div className="flex flex-col gap-2">
+                            <HugeiconsIcon
+                                icon={exp.icon}
+                                size={24}
+                                color="currentColor"
+                                strokeWidth={2}
+                                className="text-indigo-500 dark:text-indigo-400 group-hover:scale-110 transition-transform duration-300"
+                            />
+                            <p className="text-sm font-semibold text-zinc-900 dark:text-white font-sans">
+                                {exp.title}
+                            </p>
+                        </div>
+                        <p className="text-sm font-medium text-zinc-500 font-sans">
+                            {exp.tools}
+                        </p>
                     </div>
-                    <p className="text-sm font-semibold text-zinc-500 font-sans">Figma, Adobe XD, Sketch</p>
-                </div>
-                <div className="flex flex-1 h-32 flex-col gap-4 items-start p-6 justify-center bg-zinc-100 dark:bg-zinc-900 rounded-2xl w-full">
-                    <div className="flex flex-col gap-2">
-                        <HugeiconsIcon icon={CodeSquareIcon} size={24} color="currentColor" strokeWidth={2} className="text-indigo-500 dark:text-indigo-400 transition-colors duration-300" />
-                        <p className="text-sm font-semibold text-zinc-900 dark:text-white font-sans">Front-end</p>
-                    </div>
-                    <p className="text-sm font-semibold text-zinc-500 font-sans">React, Next.js, TypeScript</p>
-                </div>
-                <div className="flex flex-1 h-32 flex-col gap-4 items-start p-6 justify-center bg-zinc-100 dark:bg-zinc-900 rounded-2xl w-full">
-                    <div className="flex flex-col gap-2">
-                        <HugeiconsIcon icon={DatabaseLightningIcon} size={24} color="currentColor" strokeWidth={2} className="text-indigo-500 dark:text-indigo-400 transition-colors duration-300" />
-                        <p className="text-sm font-semibold text-zinc-900 dark:text-white font-sans">Back-end</p>
-                    </div>
-                    <p className="text-sm font-semibold text-zinc-500 font-sans">Node.js, .NET, Python</p>
-                </div>
+                ))}
             </div>
+
         </section>
     );
 }
+
