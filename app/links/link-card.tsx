@@ -6,11 +6,12 @@ interface LinkCardProps {
     icon: any;
     title: string;
     url: string;
+    onClick?: () => void;
 }
 
-export function LinkCard({ icon, title, url }: LinkCardProps) {
+export function LinkCard({ icon, title, url, onClick }: LinkCardProps) {
     return (
-        <Link href={url} target="_blank" className="flex w-full justify-between items-center p-3 hover:px-2 transition-all duration-200 cursor-pointer group">
+        <Link href={url} target="_blank" onClick={onClick} className="flex w-full justify-between items-center p-3 hover:px-2 transition-all duration-200 cursor-pointer group">
             <div className="flex gap-4">
                 <HugeiconsIcon icon={icon} size={16} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200 group-hover:text-indigo-500 dark:group-hover:text-indigo-400" />
                 <div className="font-semibold text-sm text-zinc-700 dark:text-zinc-200">{title}</div>

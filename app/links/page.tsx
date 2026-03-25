@@ -1,8 +1,12 @@
+"use client";
+
 import { LinkCard } from "./link-card";
 import { LINKS_DATA } from "@/constants/data";
 import Image from "next/image";
 import { EnergyIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { track } from "@vercel/analytics";
+import Link from "next/link";
 
 export default function LinksPage() {
     return (
@@ -25,6 +29,7 @@ export default function LinksPage() {
                             icon={link.icon}
                             title={link.title}
                             url={link.url}
+                            onClick={() => track("link_click", { title: link.title, url: link.url })}
                         />
                     ))}
                 </div>
@@ -32,7 +37,7 @@ export default function LinksPage() {
             <footer className="flex w-full items-center justify-center mt-8 pb-4">
                 <div className="flex items-center gap-2 border border-zinc-200 dark:border-zinc-800 rounded-full pl-2 pr-4 py-1">
                     <HugeiconsIcon icon={EnergyIcon} size={20} strokeWidth={2} className="text-zinc-600 dark:text-zinc-200" />
-                    <a href="https://ecthon.me" className="text-zinc-900 dark:text-zinc-100">ecthon</a>
+                    <Link href="https://ecthon.me" className="text-zinc-900 dark:text-zinc-100">ecthon</Link>
                 </div>
             </footer>
         </main>
