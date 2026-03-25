@@ -49,7 +49,27 @@ export const SOCIAL_LINKS = [
     }
 ];
 
-export const WORKS_DATA = [
+export type WorkItemCompleted = {
+    id: string;
+    type: "completed";
+    title: string;
+    href: string;
+    images: { desktop: string; mobile: string };
+    rowSpan: number;
+};
+
+export type WorkItemBuilding = {
+    id: string;
+    type: "building";
+    title: string;
+    statusText: string;
+    href: string;
+    rowSpan: number;
+};
+
+export type WorkItem = WorkItemCompleted | WorkItemBuilding;
+
+export const WORKS_DATA: WorkItem[] = [
     {
         id: "work-1",
         title: "Projeto sendo construído...",
