@@ -22,7 +22,7 @@ export default function LinksPage() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-full items-center justify-center p-2 sm:p-0 sm:gap-0">
+                <div className="flex flex-col w-full items-center justify-center p-2 space-y-2 sm:p-0 sm:gap-0">
                     {LINKS_DATA.map((link) => (
                         <LinkCard
                             key={link.title}
