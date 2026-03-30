@@ -5,10 +5,8 @@ import Link from "next/link";
 import { WORKS_DATA, WorkItem } from "@/constants/data";
 
 function WorkCard({ work }: { work: WorkItem }) {
-    // DRY HTML - Elementos visuais iguais do Card, gerados uma vez só
     const cardVisuals = (
-        <div className="group relative flex border border-zinc-200 dark:border-zinc-900 items-center justify-center flex-1 h-full rounded-2xl font-medium overflow-hidden cursor-pointer bg-zinc-100 dark:bg-transparent">
-            {/* Conditional Content based on TS Discriminated Union */}
+        <div className="group relative w-full flex border border-zinc-200 dark:border-zinc-900 items-center justify-center flex-1 h-full rounded-2xl font-medium overflow-hidden cursor-pointer bg-zinc-100 dark:bg-transparent">
             <div className={`flex w-full h-full ${work.type === "completed" ? 'flex-col justify-end' : 'p-6 items-center justify-center'} transition-transform duration-500 ease-out group-hover:scale-110`}>
                 {work.type === "completed" ? (
                     <>

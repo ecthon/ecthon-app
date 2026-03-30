@@ -9,7 +9,10 @@ import { Separator } from "./ui/separator";
 
 export function Hero() {
     return (
-        <section aria-label="Introdução" className="flex flex-col w-full">
+        <section aria-label="Introdução" className="relative flex flex-col w-full isolate">
+            {/* Efeito decorativo de fundo em tons de purple */}
+            <div className="pointer-events-none absolute top-[-10%] left-1/2 -z-10 -translate-x-1/2 w-[80%] md:w-[500px] h-[300px] bg-purple-500/25 dark:bg-purple-600/20 blur-[100px] rounded-full opacity-90 transition-opacity duration-500"></div>
+
             <div className="flex flex-col gap-5 mt-10 mb-8 md:mt-24 md:mb-14">
                 <h1 className="flex flex-col text-5xl sm:text-6xl md:text-[80px] font-extrabold tracking-tighter text-zinc-900 dark:text-white font-sans leading-[1.05] md:leading-[1.05]">
                     <span>Integrando</span>
@@ -22,7 +25,7 @@ export function Hero() {
 
             <div className="flex flex-col md:flex-row w-full justify-between items-start md:items-center mt-4 md:mt-0 gap-6 md:gap-0">
 
-                <Link href="#" className="group w-full sm:w-fit flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm hover:shadow-[0_0_20px_rgba(99,102,241,0.3)] md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 shrink-0 md:mb-8">
+                <Link href="#" className="group w-[75%] sm:w-fit flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm hover:shadow-[0_0_20px_rgba(99,102,241,0.3)] md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 shrink-0 md:mb-8">
                     <span>Enviar mensagem</span>
                     <div className="relative flex items-center justify-center">
                         {/* Efeito de borda pulsante atrás do botão */}

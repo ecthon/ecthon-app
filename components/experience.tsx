@@ -3,7 +3,7 @@ import { EXPERIENCES_DATA } from "@/constants/data";
 
 export function Experience() {
     return (
-        <section aria-labelledby="experience-title" className="flex flex-col gap-8 md:gap-10 mt-12 md:mt-20">
+        <section aria-labelledby="experience-title" className="flex w-full flex-col gap-8 md:gap-10 mt-12 md:mt-20">
 
             <div className="group flex items-center gap-2">
                 <h2 id="experience-title" className="flex flex-col">
