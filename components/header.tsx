@@ -3,13 +3,25 @@ import { ArrowExpandIcon, ArrowShrinkIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 import { useFullscreen } from "../hooks/use-fullscreen";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
     const { isFullscreen, toggleFullscreen } = useFullscreen();
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+
     return (
         <header className="flex sticky top-0 z-50 w-full py-4 sm:py-6 justify-center bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md border-b border-indigo-200 dark:border-indigo-900 transition-colors duration-300">
+            <motion.div
+                style={{ scaleX, transformOrigin: "0%" }}
+                className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-indigo-500 z-50"
+            />
             <div className="flex max-w-5xl w-full justify-between items-center px-6 md:px-0 mx-auto">
                 <Link href="/" className="active:scale-95 transition-transform duration-200">
                     <span className="text-lg font-semibold text-zinc-900 dark:text-white px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 font-sans transition-colors duration-300 rounded-lg">

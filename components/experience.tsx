@@ -1,11 +1,18 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { EXPERIENCES_DATA } from "@/constants/data";
+import { motion } from "framer-motion";
 
 export function Experience() {
     return (
-        <section aria-labelledby="experience-title" className="flex w-full flex-col gap-8 md:gap-10 mt-12 md:mt-20">
+        <section aria-labelledby="experience-title" className="flex w-full flex-col gap-8 md:gap-10">
 
-            <div className="group flex items-center gap-2">
+            <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="group flex items-center gap-2"
+            >
                 <h2 id="experience-title" className="flex flex-col">
                     <span className="text-3xl font-semibold text-zinc-900 dark:text-white font-sans">
                         Experiência
@@ -14,15 +21,28 @@ export function Experience() {
                         nas seguintes áreas
                     </span>
                 </h2>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col md:flex-row gap-4 w-full">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, staggerChildren: 0.1 }}
+                className="flex flex-col md:flex-row gap-4 w-full"
+            >
                 {EXPERIENCES_DATA.map((exp: any, index: number) => (
-                    <div
+                    <motion.div
                         key={index}
-                        className="flex flex-1 flex-col h-32 justify-between items-start p-6 bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800/50 hover:bg-zinc-200/60 rounded-2xl w-full border border-transparent dark:hover:border-zinc-700/50 hover:shadow-sm hover:-translate-y-1 transition-all duration-300"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        className="group/card relative flex flex-1 flex-col h-32 justify-between items-start p-6 bg-zinc-100 dark:bg-zinc-900 rounded-2xl w-full border border-transparent dark:border-zinc-800/50 hover:-translate-y-1 transition-transform duration-300 overflow-hidden cursor-default"
                     >
-                        <div className="flex flex-col gap-2">
+                        {/* Efeito Glow / Spotlight fake usando group-hover do Tailwind 4 */}
+                        <div className="absolute inset-0 bg-linear-to-tr from-transparent via-indigo-500/0 to-transparent group-hover/card:via-indigo-500/10 dark:group-hover/card:via-indigo-400/10 transition-colors duration-500 z-0"></div>
+                        
+                        <div className="flex flex-col gap-2 z-10">
                             <HugeiconsIcon
                                 icon={exp.icon}
                                 size={24}
@@ -34,12 +54,12 @@ export function Experience() {
                                 {exp.title}
                             </p>
                         </div>
-                        <p className="text-sm font-medium text-zinc-500 font-sans">
+                        <p className="text-sm font-medium text-zinc-500 font-sans z-10">
                             {exp.tools}
                         </p>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
 
         </section>
     );

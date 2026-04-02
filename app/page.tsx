@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex flex-col w-full h-auto">
       <Buiding />
       <Header />
-      <div className="flex flex-col max-w-5xl space-y-20 md:space-y-12 items-center justify-center w-full px-6 md:px-0 min-h-screen mx-auto">
+      <div className="flex flex-col max-w-5xl gap-20 md:gap-32 w-full px-6 md:px-8 min-h-screen mx-auto pt-8 md:pt-12 pb-16">
         <Hero />
         <Works />
         <Experience />
