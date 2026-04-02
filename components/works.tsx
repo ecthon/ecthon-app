@@ -3,6 +3,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
 import { WORKS_DATA, WorkItem } from "@/constants/data";
+import { motion } from "framer-motion";
 
 function WorkCard({ work }: { work: WorkItem }) {
     const cardVisuals = (
@@ -31,18 +32,16 @@ function WorkCard({ work }: { work: WorkItem }) {
         </div>
     );
 
-    const layoutClasses = `flex w-full aspect-square md:aspect-auto ${work.rowSpan === 2 ? 'md:row-span-2' : 'md:row-span-1'}`;
-
     if (work.type === "completed") {
         return (
-            <Link href={work.href} target="_blank" rel="noopener noreferrer" className={layoutClasses}>
+            <Link href={work.href} target="_blank" rel="noopener noreferrer" className="flex w-full h-full">
                 {cardVisuals}
             </Link>
         );
     }
 
     return (
-        <div className={layoutClasses}>
+        <div className="flex w-full h-full">
             {cardVisuals}
         </div>
     );
@@ -50,12 +49,48 @@ function WorkCard({ work }: { work: WorkItem }) {
 
 export function Works() {
     return (
-        <section aria-label="Projetos Recentes" className="flex flex-col gap-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
-                {WORKS_DATA.map((work) => (
-                    <WorkCard key={work.id} work={work} />
-                ))}
-            </div>
+        <section aria-labelledby="works-title" className="flex flex-col gap-8 md:gap-10 w-full mt-4">
+            <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="group flex flex-col gap-2"
+            >
+                <h2 id="works-title" className="flex flex-col">
+                    <span className="text-3xl font-semibold text-zinc-900 dark:text-white font-sans">
+                        Projetos
+                    </span>
+                    <span className="text-3xl font-normal text-zinc-500 font-sans">
+                        em destaque
+                    </span>
+                </h2>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, staggerChildren: 0.1 }}
+                className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4"
+            >
+                {WORKS_DATA.map((work, index) => {
+                    const layoutClasses = `flex w-full h-full aspect-square md:aspect-auto ${work.rowSpan === 2 ? 'md:row-span-2' : 'md:row-span-1'}`;
+                    
+                    return (
+                        <motion.div
+                            key={work.id}
+                            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className={layoutClasses}
+                        >
+                            <WorkCard work={work} />
+                        </motion.div>
+                    );
+                })}
+            </motion.div>
         </section>
     );
 }
