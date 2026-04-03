@@ -1,5 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { EXPERIENCES_DATA } from "@/constants/data";
+import { Technologies } from "./technologies";
 
 export function Experience() {
     return (
@@ -38,7 +39,7 @@ export function Experience() {
                     </div>
                 ))}
             </div>
-
+            <Technologies />
         </section>
     );
 }
