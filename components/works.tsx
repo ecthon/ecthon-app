@@ -80,7 +80,7 @@ export function Works() {
                 <WorkCard
                     title="Links"
                     href="https://ecthon.me/links"
-                    image="/img-links.webp"
+                    image="/img-links-m.webp"
                     rowSpan={1}
                 />
                 <WorkCard
