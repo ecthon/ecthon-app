@@ -2,7 +2,6 @@ import { ConstructionIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 interface WorkCardProps {
     title: string;
@@ -10,10 +9,9 @@ interface WorkCardProps {
     image?: string;
     statusText?: string;
     rowSpan?: number;
-    delay?: number;
 }
 
-function WorkCard({ title, href, image, statusText, rowSpan = 1, delay = 0 }: WorkCardProps) {
+function WorkCard({ title, href, image, statusText, rowSpan = 1 }: WorkCardProps) {
     const cardVisuals = (
         <div className="group w-full flex border border-zinc-200 dark:border-zinc-800 items-center justify-center flex-1 h-full rounded-2xl font-medium cursor-pointer bg-white dark:bg-zinc-950 p-1">
             <div className="relative w-full h-full rounded-[14px] overflow-hidden bg-zinc-50 dark:bg-zinc-900/20">
@@ -25,7 +23,8 @@ function WorkCard({ title, href, image, statusText, rowSpan = 1, delay = 0 }: Wo
                             width={1000}
                             height={1000}
                             priority={true}
-                            quality={80}
+                            quality={100}
+                            unoptimized
                             className="w-full h-full object-cover"
                         />
                     ) : (
@@ -49,13 +48,7 @@ function WorkCard({ title, href, image, statusText, rowSpan = 1, delay = 0 }: Wo
     const layoutClasses = `flex w-full h-full aspect-square md:aspect-auto ${rowSpan === 2 ? 'md:row-span-2' : 'md:row-span-1'}`;
 
     return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay }}
-            className={layoutClasses}
-        >
+        <div className={layoutClasses}>
             {href && href !== "#" ? (
                 <Link href={href} target="_blank" rel="noopener noreferrer" className="flex w-full h-full">
                     {cardVisuals}
@@ -65,20 +58,14 @@ function WorkCard({ title, href, image, statusText, rowSpan = 1, delay = 0 }: Wo
                     {cardVisuals}
                 </div>
             )}
-        </motion.div>
+        </div>
     );
 }
 
 export function Works() {
     return (
         <section aria-labelledby="works-title" className="flex flex-col gap-8 md:gap-10 w-full mt-4">
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="group flex flex-col gap-2"
-            >
+            <div className="group flex flex-col gap-2">
                 <h2 id="works-title" className="flex flex-col">
                     <span className="text-3xl font-semibold text-zinc-900 dark:text-white font-sans">
                         Projetos
@@ -87,7 +74,7 @@ export function Works() {
                         em destaque
                     </span>
                 </h2>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
                 <WorkCard
@@ -95,21 +82,18 @@ export function Works() {
                     href="https://ecthon.me/links"
                     image="/img-links-mobile.webp"
                     rowSpan={1}
-                    delay={0}
                 />
                 <WorkCard
                     title="Cartão de embarque"
                     href="https://boarding-pass-seven.vercel.app/"
                     image="/img-ticket.webp"
                     rowSpan={2}
-                    delay={0.1}
                 />
                 <WorkCard
                     title="Projeto sendo construído..."
                     href="#"
                     statusText="Em breve..."
                     rowSpan={1}
-                    delay={0.2}
                 />
             </div>
         </section>
