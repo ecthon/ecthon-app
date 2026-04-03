@@ -10,8 +10,7 @@ import { Separator } from "./ui/separator";
 export function Hero() {
     return (
         <section aria-label="Introdução" className="relative flex flex-col w-full isolate">
-            {/* Efeito decorativo de fundo em tons de purple */}
-            <div className="pointer-events-none absolute top-[-10%] left-1/2 -z-10 -translate-x-1/2 w-[80%] md:w-[500px] h-[300px] bg-purple-500/25 dark:bg-purple-600/20 blur-[100px] rounded-full opacity-90 transition-opacity duration-500"></div>
+            <div className="pointer-events-none absolute left-3/5 -z-10 -translate-x-1/2 w-[80%] md:w-[500px] h-[300px] bg-indigo-500/25 dark:bg-indigo-600/20 blur-[100px] rounded-full opacity-90 transition-opacity duration-500" />
 
             <div className="flex flex-col gap-5 mt-10 mb-8 md:mt-24 md:mb-14">
                 <h1 className="flex flex-col text-5xl sm:text-6xl md:text-[80px] font-extrabold tracking-tighter text-zinc-900 dark:text-white font-sans leading-[1.05] md:leading-[1.05]">
@@ -28,10 +27,8 @@ export function Hero() {
                 <Link href="#" className="group w-[75%] sm:w-fit flex items-center justify-between gap-6 pl-6 pr-2 h-[60px] rounded-full bg-zinc-900 hover:bg-zinc-800 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm hover:shadow-[0_0_20px_rgba(99,102,241,0.3)] md:shadow-none text-white text-base font-semibold font-sans transition-all duration-300 shrink-0 md:mb-8">
                     <span>Enviar mensagem</span>
                     <div className="relative flex items-center justify-center">
-                        {/* Efeito de borda pulsante atrás do botão */}
                         <div className="absolute rounded-full size-11 border-4 border-indigo-400 animate-ping opacity-75"></div>
 
-                        {/* Seu botão/div original */}
                         <div className="flex rounded-full size-11 shrink-0 bg-white dark:bg-zinc-900 items-center justify-center transition-transform duration-300 border-4 border-transparent dark:border-indigo-400 animate-[pulse-border_2s_ease-in-out_infinite]">
                             <HugeiconsIcon icon={ArrowRight02Icon} size={20} strokeWidth={2.5} className="text-zinc-900 dark:text-white group-hover:-rotate-45 transition-transform duration-300" />
                         </div>

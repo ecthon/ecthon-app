@@ -15,8 +15,8 @@ export default function Home() {
         <Hero />
         <Works />
         <Experience />
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }

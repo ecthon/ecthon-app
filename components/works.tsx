@@ -50,7 +50,7 @@ function WorkCard({ work }: { work: WorkItem }) {
 export function Works() {
     return (
         <section aria-labelledby="works-title" className="flex flex-col gap-8 md:gap-10 w-full mt-4">
-            <motion.div 
+            <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -67,7 +67,7 @@ export function Works() {
                 </h2>
             </motion.div>
 
-            <motion.div 
+            <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -76,7 +76,7 @@ export function Works() {
             >
                 {WORKS_DATA.map((work, index) => {
                     const layoutClasses = `flex w-full h-full aspect-square md:aspect-auto ${work.rowSpan === 2 ? 'md:row-span-2' : 'md:row-span-1'}`;
-                    
+
                     return (
                         <motion.div
                             key={work.id}

@@ -6,7 +6,7 @@ import { SOCIAL_LINKS } from "@/constants/data";
 
 export function Footer() {
     return (
-        <footer className="flex w-full justify-center border-t border-zinc-200 dark:border-zinc-800">
+        <footer className="flex w-full justify-center border-t border-zinc-200 dark:border-zinc-900">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-6 w-full max-w-5xl px-6 md:px-0 mx-auto">
                 {/* Esquerda: Botão Voltar ao Topo e Copyright */}
                 <div className="flex flex-col md:flex-row items-center gap-6 md:gap-4">

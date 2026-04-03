@@ -17,7 +17,7 @@ export function Header() {
     });
 
     return (
-        <header className="flex sticky top-0 z-50 w-full py-4 sm:py-6 justify-center bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md border-b border-indigo-200 dark:border-indigo-900 transition-colors duration-300">
+        <header className="flex sticky top-0 z-50 w-full py-4 sm:py-6 justify-center bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md border-b border-indigo-200 dark:border-indigo-900/50 transition-colors duration-300">
             <motion.div
                 style={{ scaleX, transformOrigin: "0%" }}
                 className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-indigo-500 z-50"
