@@ -1,6 +1,6 @@
-import { 
-    CodeSquareIcon, 
-    CursorEdit02FreeIcons, 
+import {
+    CodeSquareIcon,
+    CursorEdit02FreeIcons,
     DatabaseLightningIcon,
     InstagramIcon,
     Linkedin01Icon,
@@ -46,56 +46,6 @@ export const SOCIAL_LINKS = [
         url: "https://github.com/ecthon",
         icon: GithubIcon,
         showName: false,
-    }
-];
-
-export type WorkItemCompleted = {
-    id: string;
-    type: "completed";
-    title: string;
-    href: string;
-    images: { desktop: string; mobile: string };
-    rowSpan: number;
-};
-
-export type WorkItemBuilding = {
-    id: string;
-    type: "building";
-    title: string;
-    statusText: string;
-    href: string;
-    rowSpan: number;
-};
-
-export type WorkItem = WorkItemCompleted | WorkItemBuilding;
-
-export const WORKS_DATA: WorkItem[] = [
-    {
-        id: "work-1",
-        title: "Projeto sendo construído...",
-        statusText: "Em breve...",
-        type: "building",
-        href: "#",
-        rowSpan: 1
-    },
-    {
-        id: "work-2",
-        title: "Cartão de embarque",
-        type: "completed",
-        href: "https://boarding-pass-seven.vercel.app/",
-        images: {
-            desktop: "/img-ticket.webp",
-            mobile: "/img-ticket-mobile.webp"
-        },
-        rowSpan: 2
-    },
-    {
-        id: "work-3",
-        title: "Projeto sendo construído...",
-        statusText: "Em breve...",
-        type: "building",
-        href: "#",
-        rowSpan: 1
     }
 ];
 
