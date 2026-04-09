@@ -4,7 +4,6 @@ import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { Technologies } from "@/components/technologies";
 import { Works } from "@/components/works";
 
 export default function Home() {
