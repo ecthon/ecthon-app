@@ -13,7 +13,7 @@ interface LinkCardProps {
 export function LinkCard({ icon, title, url, onClick }: LinkCardProps) {
     const trackClick = async () => {
         try {
-            await axios.post("https://links-tracker.onrender.com/", {
+            await axios.post("https://links-tracker.onrender.com/track", {
                 url,
                 title,
                 userAgent: navigator.userAgent
